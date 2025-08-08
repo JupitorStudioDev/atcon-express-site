@@ -34,7 +34,7 @@ const Home: React.FC = () => {
                 </Button>
               </Link>
               <Link to="/services">
-                <Button variant="outline-dark" size="xl" className="text-lg bg-white/20 hover:bg-white/30 text-white border-white/40">
+                <Button variant="outline-dark" size="xl" className="text-lg bg-white/20 hover:bg-white/30 text-white/90 border-white/40">
                   View Our Services
                 </Button>
               </Link>
