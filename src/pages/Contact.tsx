@@ -59,8 +59,8 @@ const Contact: React.FC = () => {
               {/* Contact Details */}
               <div className="space-y-6 mb-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary-foreground font-bold">📍</span>
+                  <div className="w-12 h-12 bg-trust-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold">📍</span>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Our Location</h3>
@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-accent-warm rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-accent-warm-foreground font-bold">📞</span>
+                    <span className="text-white font-bold">📞</span>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
