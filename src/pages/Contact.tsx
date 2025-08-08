@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MapPin, Phone, Clock } from 'lucide-react';
+import GoogleMap from '@/components/GoogleMap';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -99,12 +100,11 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
+              {/* Google Map */}
               <div className="rounded-lg overflow-hidden shadow-large">
-                <img 
-                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
-                  alt="Map showing Atcon Decorating location in North Vancouver"
-                  className="w-full h-64 object-cover"
+                <GoogleMap 
+                  address="813 Old Lillooet Rd, North Vancouver, BC V7J 2H6"
+                  className="w-full h-64"
                 />
               </div>
             </div>
