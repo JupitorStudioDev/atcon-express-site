@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { MapPin, Phone, Clock } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ const Contact: React.FC = () => {
               <div className="space-y-6 mb-8">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-foreground font-bold">📍</span>
+                    <MapPin className="w-5 h-5 text-foreground" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Our Location</h3>
@@ -73,7 +74,7 @@ const Contact: React.FC = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-foreground font-bold">📞</span>
+                    <Phone className="w-5 h-5 text-foreground" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
@@ -85,7 +86,7 @@ const Contact: React.FC = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-foreground font-bold">⏰</span>
+                    <Clock className="w-5 h-5 text-foreground" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Business Hours</h3>
