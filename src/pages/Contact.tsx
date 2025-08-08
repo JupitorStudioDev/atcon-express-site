@@ -59,8 +59,8 @@ const Contact: React.FC = () => {
               {/* Contact Details */}
               <div className="space-y-6 mb-8">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-trust-blue rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold">📍</span>
+                  <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-foreground font-bold">📍</span>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Our Location</h3>
@@ -72,8 +72,8 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-accent-warm rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold">📞</span>
+                  <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-foreground font-bold">📞</span>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
@@ -84,8 +84,8 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-trust-green rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-bold">⏰</span>
+                  <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-foreground font-bold">⏰</span>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Business Hours</h3>
