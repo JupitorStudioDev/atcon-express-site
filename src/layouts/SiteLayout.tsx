@@ -31,7 +31,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               <a href="tel:+16047204315" className="text-sm font-semibold text-foreground hover:text-accent-warm transition-colors">
                 (604) 720-4315
               </a>
-              <Button variant="cta-warm" size="sm">
+              <Button variant="cta" size="sm">
                 Get a Free Quote
               </Button>
             </div>
@@ -81,11 +81,6 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
                 Contact
               </a>
             </nav>
-
-            {/* CTA Button */}
-            <Button variant="cta" size="default" className="hidden lg:inline-flex">
-              Get a Free Quote
-            </Button>
 
             {/* Mobile Menu Button */}
             <button className="lg:hidden p-2">
