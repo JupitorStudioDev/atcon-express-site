@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -26,14 +27,17 @@ const Home: React.FC = () => {
               Your trusted partner for exceptional results that last.
             </p>
             
-            {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button variant="cta-warm" size="xl" className="text-lg">
-                Get Your Free Quote
-              </Button>
-              <Button variant="outline-dark" size="xl" className="text-lg">
-                View Our Services
-              </Button>
+              <Link to="/contact">
+                <Button variant="cta-warm" size="xl" className="text-lg">
+                  Get Your Free Quote
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button variant="outline-dark" size="xl" className="text-lg bg-white/20 hover:bg-white/30">
+                  View Our Services
+                </Button>
+              </Link>
             </div>
 
             {/* Trust Chips */}
