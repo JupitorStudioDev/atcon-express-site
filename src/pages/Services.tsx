@@ -23,9 +23,9 @@ const Services: React.FC = () => {
       {/* Services Grid */}
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
             {/* Residential Painting */}
-            <Card className="group hover:shadow-large transition-all duration-300 flex flex-col">
+            <Card className="group hover:shadow-large transition-all duration-300 h-full flex flex-col">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1556037757-8a0698ab1dcc?q=80&w=1600&auto=format&fit=crop"
@@ -33,35 +33,37 @@ const Services: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6 flex flex-col flex-grow">
+              <CardContent className="p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-semibold mb-4">Residential Painting</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <p className="text-muted-foreground mb-6">
                   Transform your home with our expert interior and exterior painting services. We use premium materials and meticulous techniques to ensure lasting beauty.
                 </p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
-                    Interior & exterior painting
+                <div className="mt-auto">
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
+                      Interior & exterior painting
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
+                      Color consultation
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
+                      Surface preparation & repair
+                    </div>
                   </div>
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
-                    Color consultation
-                  </div>
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
-                    Surface preparation & repair
-                  </div>
+                  <a href="/services/residential">
+                    <Button variant="cta" size="lg" className="w-full">
+                      Learn More
+                    </Button>
+                  </a>
                 </div>
-                <a href="/services/residential">
-                  <Button variant="cta" size="lg" className="w-full">
-                    Learn More
-                  </Button>
-                </a>
               </CardContent>
             </Card>
 
             {/* Commercial Painting */}
-            <Card className="group hover:shadow-large transition-all duration-300 flex flex-col">
+            <Card className="group hover:shadow-large transition-all duration-300 h-full flex flex-col">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
@@ -69,35 +71,37 @@ const Services: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6 flex flex-col flex-grow">
+              <CardContent className="p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-semibold mb-4">Commercial Painting</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <p className="text-muted-foreground mb-6">
                   Professional painting solutions for offices, retail spaces, and industrial buildings. Minimal disruption, maximum impact for your business.
                 </p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
-                    Office & retail painting
+                <div className="mt-auto">
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
+                      Office & retail painting
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
+                      Industrial coatings
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
+                      Scheduled maintenance
+                    </div>
                   </div>
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
-                    Industrial coatings
-                  </div>
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
-                    Scheduled maintenance
-                  </div>
+                  <a href="/services/commercial">
+                    <Button variant="cta" size="lg" className="w-full">
+                      Learn More
+                    </Button>
+                  </a>
                 </div>
-                <a href="/services/commercial">
-                  <Button variant="cta" size="lg" className="w-full">
-                    Learn More
-                  </Button>
-                </a>
               </CardContent>
             </Card>
 
             {/* Cabinet Painting */}
-            <Card className="group hover:shadow-large transition-all duration-300 flex flex-col">
+            <Card className="group hover:shadow-large transition-all duration-300 h-full flex flex-col">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1556909114-6c25c2f1c6c1?q=80&w=1600&auto=format&fit=crop"
@@ -105,30 +109,32 @@ const Services: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6 flex flex-col flex-grow">
+              <CardContent className="p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-semibold mb-4">Cabinet Painting</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <p className="text-muted-foreground mb-6">
                   Refresh your kitchen with our specialized cabinet painting and refinishing services. Get the look of new cabinets at a fraction of the cost.
                 </p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
-                    Kitchen cabinet refinishing
+                <div className="mt-auto">
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
+                      Kitchen cabinet refinishing
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
+                      Custom color matching
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
+                      Hardware upgrades
+                    </div>
                   </div>
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
-                    Custom color matching
-                  </div>
-                  <div className="flex items-center text-sm">
-                    <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
-                    Hardware upgrades
-                  </div>
+                  <a href="/services/cabinet-painting">
+                    <Button variant="cta" size="lg" className="w-full">
+                      Learn More
+                    </Button>
+                  </a>
                 </div>
-                <a href="/services/cabinet-painting">
-                  <Button variant="cta" size="lg" className="w-full">
-                    Learn More
-                  </Button>
-                </a>
               </CardContent>
             </Card>
           </div>
