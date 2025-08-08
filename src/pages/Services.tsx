@@ -52,9 +52,11 @@ const Services: React.FC = () => {
                     Surface preparation & repair
                   </div>
                 </div>
-                <Button variant="cta" size="lg" className="w-full">
-                  Learn More
-                </Button>
+                <a href="/services/residential">
+                  <Button variant="cta" size="lg" className="w-full">
+                    Learn More
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -86,9 +88,11 @@ const Services: React.FC = () => {
                     Scheduled maintenance
                   </div>
                 </div>
-                <Button variant="cta" size="lg" className="w-full">
-                  Learn More
-                </Button>
+                <a href="/services/commercial">
+                  <Button variant="cta" size="lg" className="w-full">
+                    Learn More
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -120,9 +124,11 @@ const Services: React.FC = () => {
                     Hardware upgrades
                   </div>
                 </div>
-                <Button variant="cta" size="lg" className="w-full">
-                  Learn More
-                </Button>
+                <a href="/services/cabinet-painting">
+                  <Button variant="cta" size="lg" className="w-full">
+                    Learn More
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
