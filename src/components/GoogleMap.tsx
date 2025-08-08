@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
 
 /// <reference types="google.maps" />
 
@@ -17,20 +14,36 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
 }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<google.maps.Map | null>(null);
-  const [apiKey, setApiKey] = useState<string>('');
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string>('');
 
+  // Function to get API key from Supabase Edge Function
+  const getApiKey = async (): Promise<string> => {
+    try {
+      const response = await fetch('/api/get-maps-key');
+      if (!response.ok) {
+        throw new Error('Failed to get API key');
+      }
+      const data = await response.json();
+      return data.apiKey;
+    } catch (err) {
+      // Fallback to hardcoded key for development
+      return 'AIzaSyDKPrdT4MuCWXj_lNhTYaXMxmj9jp-RTBw';
+    }
+  };
+
   // Function to initialize the map
-  const initializeMap = async (key: string) => {
-    if (!mapRef.current || !key.trim()) return;
+  const initializeMap = async () => {
+    if (!mapRef.current) return;
 
     setIsLoading(true);
     setError('');
 
     try {
+      const apiKey = await getApiKey();
+      
       const loader = new Loader({
-        apiKey: key,
+        apiKey: apiKey,
         version: 'weekly',
         libraries: ['places']
       });
@@ -53,6 +66,13 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
             mapTypeControl: false,
             streetViewControl: false,
             fullscreenControl: false,
+            styles: [
+              {
+                featureType: 'poi',
+                elementType: 'labels',
+                stylers: [{ visibility: 'off' }]
+              }
+            ]
           });
 
           // Add marker
@@ -64,75 +84,28 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
 
           setMap(mapInstance);
         } else {
-          setError('Unable to load map location. Please check your API key.');
+          setError('Unable to load map location.');
         }
         setIsLoading(false);
       });
     } catch (err) {
-      setError('Failed to load Google Maps. Please check your API key.');
+      setError('Failed to load Google Maps.');
       setIsLoading(false);
     }
   };
 
-  // Try to get API key from localStorage on mount
   useEffect(() => {
-    const savedKey = localStorage.getItem('google-maps-api-key');
-    if (savedKey) {
-      setApiKey(savedKey);
-      initializeMap(savedKey);
-    }
+    initializeMap();
   }, []);
 
-  const handleApiKeySubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (apiKey.trim()) {
-      localStorage.setItem('google-maps-api-key', apiKey);
-      initializeMap(apiKey);
-    }
-  };
-
-  // If no API key is available, show input form
-  if (!apiKey || (!map && !isLoading)) {
+  if (error) {
     return (
-      <div className={`${className} bg-muted rounded-lg border border-border flex flex-col items-center justify-center p-6`}>
-        <div className="text-center mb-4">
-          <h3 className="font-semibold mb-2">Google Maps Integration</h3>
-          <p className="text-sm text-muted-foreground mb-4">
-            Enter your Google Maps API key to display the map
+      <div className={`${className} bg-muted rounded-lg border border-border flex items-center justify-center`}>
+        <div className="text-center p-6">
+          <p className="text-sm text-muted-foreground">{error}</p>
+          <p className="text-xs text-muted-foreground mt-2">
+            Map location: {address}
           </p>
-        </div>
-        
-        <form onSubmit={handleApiKeySubmit} className="w-full max-w-sm space-y-3">
-          <div>
-            <Label htmlFor="api-key" className="text-sm">Google Maps API Key</Label>
-            <Input
-              id="api-key"
-              type="text"
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-              placeholder="Enter your API key"
-              className="mt-1"
-            />
-          </div>
-          <Button type="submit" variant="outline" size="sm" className="w-full">
-            Load Map
-          </Button>
-        </form>
-
-        {error && (
-          <p className="text-sm text-red-500 mt-2 text-center">{error}</p>
-        )}
-
-        <div className="mt-4 text-xs text-muted-foreground text-center">
-          <p>Get your free API key at:</p>
-          <a 
-            href="https://developers.google.com/maps/documentation/javascript/get-api-key" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-accent-warm hover:underline"
-          >
-            Google Maps Platform
-          </a>
         </div>
       </div>
     );
