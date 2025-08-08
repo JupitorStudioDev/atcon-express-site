@@ -188,7 +188,7 @@ const Commercial: React.FC = () => {
                 </div>
               </div>
               <Button variant="cta" size="lg">
-                View Our Portfolio
+                Get a Quote
               </Button>
             </div>
           </div>
@@ -250,7 +250,7 @@ const Commercial: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="cta" size="xl">
-              Get Commercial Quote
+              Get a Quote
             </Button>
             <Button variant="outline-dark" size="xl">
               View Our Process

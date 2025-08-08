@@ -77,7 +77,7 @@ const Residential: React.FC = () => {
                 Our team understands the unique challenges of Vancouver's climate and selects paints and techniques specifically suited to our local conditions.
               </p>
               <Button variant="cta" size="lg">
-                Get Your Free Estimate
+                Get a Quote
               </Button>
             </div>
           </div>
@@ -213,7 +213,7 @@ const Residential: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="cta" size="xl">
-              Get Your Free Quote
+              Get a Quote
             </Button>
             <Button variant="outline-dark" size="xl">
               View Our Gallery

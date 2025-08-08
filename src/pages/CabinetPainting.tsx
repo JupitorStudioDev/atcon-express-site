@@ -97,7 +97,7 @@ const CabinetPainting: React.FC = () => {
                 </div>
               </div>
               <Button variant="cta" size="lg">
-                View Cabinet Gallery
+                Get a Quote
               </Button>
             </div>
           </div>
@@ -271,7 +271,7 @@ const CabinetPainting: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="cta" size="xl">
-              Get Your Cabinet Quote
+              Get a Quote
             </Button>
             <Button variant="outline-dark" size="xl">
               View Cabinet Gallery
