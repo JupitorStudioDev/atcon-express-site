@@ -95,19 +95,19 @@ const Residential: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Exterior North Vancouver */}
+            {/* Exterior Painting */}
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop"
-                  alt="Exterior house painting in North Vancouver"
+                  alt="Professional exterior house painting services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Exterior Painting - North Vancouver</h3>
+                <h3 className="text-xl font-semibold mb-3">Exterior Painting</h3>
                 <p className="text-muted-foreground mb-6">
-                  Specialized exterior painting services for North Vancouver homes, using weather-resistant paints designed for our coastal climate.
+                  Protect and beautify your home's exterior with weather-resistant paints designed for our coastal climate.
                 </p>
                 <div className="space-y-2 mb-6 text-sm">
                   <div className="flex items-center">
@@ -123,27 +123,22 @@ const Residential: React.FC = () => {
                     Heritage home expertise
                   </div>
                 </div>
-                <a href="/services/residential/exterior-north-vancouver">
-                  <Button variant="outline-dark" size="default" className="w-full">
-                    Learn More
-                  </Button>
-                </a>
               </CardContent>
             </Card>
 
-            {/* Interior Burnaby */}
+            {/* Interior Painting */}
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop"
-                  alt="Interior painting services in Burnaby"
+                  alt="Beautiful interior painting services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Interior Painting - Burnaby</h3>
+                <h3 className="text-xl font-semibold mb-3">Interior Painting</h3>
                 <p className="text-muted-foreground mb-6">
-                  Expert interior painting services for Burnaby residences, from condos to family homes, with eco-friendly paint options.
+                  Transform your living spaces with expert interior painting, from single rooms to whole-home makeovers.
                 </p>
                 <div className="space-y-2 mb-6 text-sm">
                   <div className="flex items-center">
@@ -159,11 +154,6 @@ const Residential: React.FC = () => {
                     Minimal disruption service
                   </div>
                 </div>
-                <a href="/services/residential/interior-burnaby">
-                  <Button variant="outline-dark" size="default" className="w-full">
-                    Learn More
-                  </Button>
-                </a>
               </CardContent>
             </Card>
           </div>

@@ -96,11 +96,9 @@ const CabinetPainting: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <a href="/services/cabinet-painting/langley">
-                <Button variant="cta" size="lg">
-                  View Langley Cabinet Services
-                </Button>
-              </a>
+              <Button variant="cta" size="lg">
+                View Cabinet Gallery
+              </Button>
             </div>
           </div>
         </div>

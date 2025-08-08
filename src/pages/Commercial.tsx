@@ -187,11 +187,9 @@ const Commercial: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <a href="/services/commercial/burnaby">
-                <Button variant="cta" size="lg">
-                  View Burnaby Commercial Services
-                </Button>
-              </a>
+              <Button variant="cta" size="lg">
+                View Our Portfolio
+              </Button>
             </div>
           </div>
         </div>
