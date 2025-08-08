@@ -149,9 +149,11 @@ const Home: React.FC = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 With over three decades of experience serving Vancouver and the Lower Mainland, we've refined our approach to deliver consistent, superior results on every project.
               </p>
-              <Button variant="cta" size="lg">
-                See Our Process
-              </Button>
+              <Link to="/process">
+                <Button variant="cta" size="lg">
+                  See Our Process
+                </Button>
+              </Link>
             </div>
             <div className="relative">
               <img 
@@ -220,9 +222,11 @@ const Home: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button variant="cta" size="lg">
-              View Full Gallery
-            </Button>
+            <Link to="/gallery">
+              <Button variant="cta" size="lg">
+                View Full Gallery
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

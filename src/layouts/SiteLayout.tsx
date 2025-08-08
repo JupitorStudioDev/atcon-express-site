@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 interface SiteLayoutProps {
@@ -31,9 +32,11 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               <a href="tel:+16047204315" className="text-sm font-semibold text-foreground hover:text-accent-warm transition-colors">
                 (604) 720-4315
               </a>
-              <Button variant="cta" size="sm">
-                Get a Free Quote
-              </Button>
+              <Link to="/contact">
+                <Button variant="cta" size="sm">
+                  Get a Free Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
