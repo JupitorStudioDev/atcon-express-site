@@ -33,9 +33,9 @@ const Services: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex flex-col h-full">
                 <h3 className="text-2xl font-semibold mb-4">Residential Painting</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 flex-grow">
                   Transform your home with our expert interior and exterior painting services. We use premium materials and meticulous techniques to ensure lasting beauty.
                 </p>
                 <div className="space-y-3 mb-6">
@@ -69,9 +69,9 @@ const Services: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex flex-col h-full">
                 <h3 className="text-2xl font-semibold mb-4">Commercial Painting</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 flex-grow">
                   Professional painting solutions for offices, retail spaces, and industrial buildings. Minimal disruption, maximum impact for your business.
                 </p>
                 <div className="space-y-3 mb-6">
@@ -105,9 +105,9 @@ const Services: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex flex-col h-full">
                 <h3 className="text-2xl font-semibold mb-4">Cabinet Painting</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 flex-grow">
                   Refresh your kitchen with our specialized cabinet painting and refinishing services. Get the look of new cabinets at a fraction of the cost.
                 </p>
                 <div className="space-y-3 mb-6">
