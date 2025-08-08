@@ -18,11 +18,17 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Custom variants for Atcon
+        cta: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-medium hover:shadow-large transition-all duration-200 font-semibold",
+        "cta-warm": "bg-accent-warm text-accent-warm-foreground hover:bg-accent-warm/90 shadow-medium hover:shadow-large transition-all duration-200 font-semibold",
+        "outline-dark": "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground transition-all duration-200",
+        trust: "bg-trust-green text-white hover:bg-trust-green/90 font-medium",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-12 rounded-lg px-10 text-base",
         icon: "h-10 w-10",
       },
     },
