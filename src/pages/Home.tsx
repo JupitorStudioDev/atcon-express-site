@@ -122,8 +122,8 @@ const Home: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="/lovable-uploads/91183b86-b56c-438e-a863-a2b24d318150.png"
-                  alt="Expert cabinet painting and refinishing services"
+                  src="/lovable-uploads/9e60cc9f-0363-4c1c-8aba-321ab79f9ec9.png"
+                  alt="Beautiful white kitchen cabinets with custom details showcasing professional cabinet painting services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
