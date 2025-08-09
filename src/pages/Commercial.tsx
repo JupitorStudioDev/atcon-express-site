@@ -155,8 +155,8 @@ const Commercial: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop"
-                alt="Modern office interior with professional painting"
+                src="/lovable-uploads/af3222d3-3efd-4a26-80c0-67b9d4a11a7b.png"
+                alt="Modern commercial hallway with sophisticated dark paint finishes"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
