@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <section className="relative bg-gradient-hero text-white">
         <div className="absolute inset-0">
           <img 
-            src={heroImage}
+            src="/lovable-uploads/9c558693-8cca-465b-8b2b-b73f1e8b620b.png"
             alt="Professional house painting services in Vancouver"
             className="w-full h-full object-cover opacity-30"
           />
