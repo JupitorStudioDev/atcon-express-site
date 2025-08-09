@@ -38,7 +38,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 6,
-      image: "https://images.unsplash.com/photo-1556909114-6c25c2f1c6c1?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/2bb654cf-9ade-49f7-a1c5-be22562a9e9f.png",
       title: "Luxury Kitchen Upgrade",
       description: "Premium cabinet painting with custom hardware integration"
     },
