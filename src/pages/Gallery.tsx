@@ -8,75 +8,93 @@ const Gallery: React.FC = () => {
   const projects = [
     {
       id: 1,
-      image: "/lovable-uploads/f790be10-5fb0-4de8-adf4-dedf94f1c9b6.png",
-      title: "Modern Exterior Transformation",
-      description: "Complete exterior makeover with premium weather-resistant paint in North Vancouver"
+      image: "/lovable-uploads/277c64a6-eade-4e3c-80f3-45c3eb53eef7.png",
+      title: "Heritage Kitchen Cabinet Painting",
+      description: "Professional cabinet refinishing with classic white paint finish, featuring brick island accent and exposed beam ceiling work"
     },
     {
       id: 2,
-      image: "/lovable-uploads/6d0b7a1d-be14-4d72-9a06-2fdeb2b5eda4.png",
-      title: "Elegant Living Room Refresh",
-      description: "Sophisticated interior painting with custom color consultation in Burnaby"
+      image: "/lovable-uploads/5b04c838-1a5b-439d-8d32-3871c6530349.png",
+      title: "Modern Bedroom Interior Painting",
+      description: "Contemporary wall finishes with panoramic window trim work and coffered ceiling details"
     },
     {
       id: 3,
-      image: "/lovable-uploads/91183b86-b56c-438e-a863-a2b24d318150.png",
-      title: "Kitchen Cabinet Refinishing",
-      description: "Complete cabinet transformation with durable finish in Langley"
+      image: "/lovable-uploads/6e13568a-1d8e-4447-8afa-5eed2b29c8df.png",
+      title: "Curved Staircase Painting & Finishing",
+      description: "Elegant curved staircase with custom white baluster painting and detailed trim work under skylight"
     },
     {
       id: 4,
-      image: "/lovable-uploads/54fe58c0-ebed-4e15-9c47-75a5ff1e3e20.png",
-      title: "Contemporary Office Space",
-      description: "Professional commercial painting for modern workspace in Vancouver"
+      image: "/lovable-uploads/e68df65e-026d-4343-83d6-e2819b59f0bd.png",
+      title: "Children's Room Specialty Painting",
+      description: "Custom orange accent wall with decorative border trim and coordinated navy blue window seat painting"
     },
     {
       id: 5,
-      image: "/lovable-uploads/98f17076-bf3b-48a3-9b62-c42aa329f5da.png",
-      title: "Retail Store Enhancement",
-      description: "Commercial painting project for high-traffic retail environment"
+      image: "/lovable-uploads/3f14c301-6d9d-42e6-9cd2-45b68c82a0d5.png",
+      title: "Formal Living Room Paint Restoration",
+      description: "Traditional blue-grey wall painting with intricate white crown molding and fireplace surround refinishing"
     },
     {
       id: 6,
-      image: "/lovable-uploads/2bb654cf-9ade-49f7-a1c5-be22562a9e9f.png",
-      title: "Luxury Kitchen Upgrade",
-      description: "Premium cabinet painting with custom hardware integration"
+      image: "/lovable-uploads/41c04dc9-2bdf-40d7-ac3a-ae3665e9fc63.png",
+      title: "Luxury Home Exterior Painting",
+      description: "Complete exterior house painting with premium beige stucco finish and white trim detailing around pool area"
     },
     {
       id: 7,
-      image: "/lovable-uploads/950aec6e-1e45-4168-9204-45ae250db699.png",
-      title: "Heritage Home Restoration",
-      description: "Careful restoration of character home exterior in West Vancouver"
+      image: "/lovable-uploads/3aab5b56-8613-4f9b-b5f6-ab17ea770df8.png",
+      title: "Living Room Fireplace Accent Painting",
+      description: "Warm beige interior wall painting with custom fireplace mantel staining and hardwood floor coordination"
     },
     {
       id: 8,
-      image: "/lovable-uploads/e4e1e7a3-88f8-4e9a-8ad8-eb46fed5fc11.png",
-      title: "Multi-Story Residential",
-      description: "Large-scale residential painting project with coordinated color scheme"
+      image: "/lovable-uploads/2f3f5893-c27e-499e-9efd-bcbd4aeefddc.png",
+      title: "Contemporary Open Concept Painting",
+      description: "Modern grey and white color scheme with exposed beam staining and stone fireplace coordination"
     },
     {
       id: 9,
-      image: "/lovable-uploads/c31d122c-eab4-4a9e-8082-5abf66b96784.png",
-      title: "Master Bedroom Suite",
-      description: "Serene bedroom transformation with premium paint finishes"
+      image: "/lovable-uploads/1047fd62-332c-4731-af00-b9a8b51fc870.png",
+      title: "Estate Home Exterior Renovation",
+      description: "Large luxury home exterior painting with coordinated earth-tone palette and white window trim detailing"
     },
     {
       id: 10,
-      image: "/lovable-uploads/341f1932-6c4a-40e1-a444-4ebe375a00c6.png",
-      title: "Gourmet Kitchen Makeover",
-      description: "Modern kitchen refresh with bold cabinetry and refined finishes"
+      image: "/lovable-uploads/eb300f3f-4267-47a9-99bd-6fe04b17711e.png",
+      title: "Grand Foyer Millwork Painting",
+      description: "Elegant curved staircase with rich wood stain finish and coordinated white column and trim painting"
     },
     {
       id: 11,
-      image: "/lovable-uploads/27e1e541-0c6b-457b-b974-b80c9e47fd6e.png",
-      title: "Corporate Headquarters",
-      description: "Multi-floor corporate office finished with precision, delivering a clean, modern, and professional workspace."
+      image: "/lovable-uploads/d82d4900-7740-426b-afaf-4070602ea763.png",
+      title: "Custom Home Bar Cabinet Finishing",
+      description: "Professional entertainment center cabinet painting with natural wood stain and built-in storage solutions"
     },
     {
       id: 12,
-      image: "/lovable-uploads/49f47bc8-a1a4-4c22-868f-dd6b3b88405b.png",
-      title: "Staircase & Railing Refinishing",
-      description: "Detailed painting and staining for architectural focal points"
+      image: "/lovable-uploads/a93d5aa7-9fc9-4ec1-9430-a52e01ab6620.png",
+      title: "Ornate Ceiling & Archway Painting",
+      description: "Detailed architectural painting featuring yellow coffered ceiling with white trim work and decorative archways"
+    },
+    {
+      id: 13,
+      image: "/lovable-uploads/fb9517cd-6f30-4c0b-abc2-ead5682880fa.png",
+      title: "Game Room Coffered Ceiling Painting",
+      description: "Recreation room with white coffered ceiling painting and coordinated wall finish for entertainment space"
+    },
+    {
+      id: 14,
+      image: "/lovable-uploads/77ca8e0a-4cea-4338-bd00-70562d8175a3.png",
+      title: "Formal Entry Mahogany Staining",
+      description: "Rich mahogany millwork staining with detailed column work and coordinated floor-to-ceiling wood finishing"
+    },
+    {
+      id: 15,
+      image: "/lovable-uploads/241c467e-6c7b-49fb-8dae-5dea3a423373.png",
+      title: "Contemporary Beam & Ceiling Painting",
+      description: "Modern living space with exposed structural beam staining and coordinated white ceiling finish work"
     }
   ];
 
