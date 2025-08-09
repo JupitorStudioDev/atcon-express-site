@@ -197,8 +197,8 @@ const Process: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop"
-                  alt="Quality control and inspection process"
+                  src="/lovable-uploads/b232f126-78f3-4784-9bef-acdb72f412d8.png"
+                  alt="Professional quality control inspection with contractor and painter reviewing work progress"
                   className="w-full rounded-lg shadow-large"
                 />
               </div>
