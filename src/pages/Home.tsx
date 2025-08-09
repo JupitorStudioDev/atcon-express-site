@@ -98,7 +98,7 @@ const Home: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
+                  src="/lovable-uploads/e995e663-3a41-4d24-9eb0-1b3b23102722.png"
                   alt="Commercial painting services for businesses in Metro Vancouver"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1556909114-6c25c2f1c6c1?q=80&w=1600&auto=format&fit=crop"
+                  src="/lovable-uploads/2530b846-1508-4c81-96c8-48826022089a.png"
                   alt="Expert cabinet painting and refinishing services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
