@@ -133,8 +133,8 @@ const Residential: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="/lovable-uploads/bc4f4a67-83af-416b-92f6-6b08859b1752.png"
-                  alt="Stunning modern living room with green accent wall showcasing professional interior painting services"
+                  src="/lovable-uploads/45560c96-35bd-4b63-a2a3-68f44344d481.png"
+                  alt="Elegant living room interior with fireplace showcasing professional interior painting services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
