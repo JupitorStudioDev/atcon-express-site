@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Home, User, Wrench, ClipboardList, Camera, Phone } from 'lucide-react';
+import { Menu, X, Home, User, Wrench, ClipboardList, Camera, Phone, ChevronDown } from 'lucide-react';
 
 interface SiteLayoutProps {
   children: React.ReactNode;
@@ -10,6 +10,7 @@ interface SiteLayoutProps {
 
 const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = false }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -77,9 +78,54 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               <a href="/about" className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors">
                 About
               </a>
-              <a href="/services" className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors">
-                Our Services
-              </a>
+              
+              {/* Services Dropdown */}
+              <div className="relative">
+                <button 
+                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                  className="flex items-center text-sm font-medium text-foreground hover:text-accent-warm transition-colors"
+                >
+                  Our Services
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </button>
+                
+                {isServicesDropdownOpen && (
+                  <div 
+                    className="absolute top-full left-0 mt-1 w-64 bg-background border border-border rounded-lg shadow-large z-50"
+                    onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                    onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                  >
+                    <div className="p-2">
+                      <a 
+                        href="/services" 
+                        className="block px-4 py-3 text-sm font-medium text-foreground hover:bg-muted rounded-md transition-colors border-b border-border mb-1"
+                      >
+                        All Services Overview
+                      </a>
+                      <a 
+                        href="/services/residential" 
+                        className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
+                      >
+                        Residential Painting
+                      </a>
+                      <a 
+                        href="/services/commercial" 
+                        className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
+                      >
+                        Commercial Painting
+                      </a>
+                      <a 
+                        href="/services/cabinet-painting" 
+                        className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
+                      >
+                        Cabinet Painting
+                      </a>
+                    </div>
+                  </div>
+                )}
+              </div>
+              
               <a href="/process" className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors">
                 Our Process
               </a>
@@ -173,7 +219,28 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Wrench className="w-5 h-5" />
-                <span>Our Services</span>
+                <span>All Services</span>
+              </a>
+              <a 
+                href="/services/residential" 
+                className="flex items-center space-x-3 text-sm text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-2 px-6 rounded-md ml-4"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <span>Residential Painting</span>
+              </a>
+              <a 
+                href="/services/commercial" 
+                className="flex items-center space-x-3 text-sm text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-2 px-6 rounded-md ml-4"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <span>Commercial Painting</span>
+              </a>
+              <a 
+                href="/services/cabinet-painting" 
+                className="flex items-center space-x-3 text-sm text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-2 px-6 rounded-md ml-4"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <span>Cabinet Painting</span>
               </a>
               <a 
                 href="/process" 
