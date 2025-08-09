@@ -8,9 +8,9 @@ const Gallery: React.FC = () => {
   const projects = [
     {
       id: 1,
-      image: "/lovable-uploads/277c64a6-eade-4e3c-80f3-45c3eb53eef7.png",
-      title: "Heritage Kitchen Cabinet Refinishing",
-      description: "Professional cabinet refinishing with classic white paint finish, featuring brick island accent and exposed beam ceiling work"
+      image: "/lovable-uploads/241c467e-6c7b-49fb-8dae-5dea3a423373.png",
+      title: "Contemporary Space with Exposed Beams",
+      description: "Modern living space with exposed structural beam staining and coordinated white ceiling finish work"
     },
     {
       id: 2,
@@ -68,69 +68,69 @@ const Gallery: React.FC = () => {
     },
     {
       id: 11,
+      image: "/lovable-uploads/277c64a6-eade-4e3c-80f3-45c3eb53eef7.png",
+      title: "Heritage Kitchen Cabinet Refinishing",
+      description: "Professional cabinet refinishing with classic white paint finish, featuring brick island accent and exposed beam ceiling work"
+    },
+    {
+      id: 12,
       image: "/lovable-uploads/d82d4900-7740-426b-afaf-4070602ea763.png",
       title: "Custom Home Bar & Entertainment Center",
       description: "Professional entertainment center cabinet finishing with natural wood stain and built-in storage solutions"
     },
     {
-      id: 12,
+      id: 13,
       image: "/lovable-uploads/a93d5aa7-9fc9-4ec1-9430-a52e01ab6620.png",
       title: "Ornate Ceiling & Archway Details",
       description: "Detailed architectural work featuring yellow coffered ceiling with white trim and decorative archways"
     },
     {
-      id: 13,
+      id: 14,
       image: "/lovable-uploads/fb9517cd-6f30-4c0b-abc2-ead5682880fa.png",
       title: "Game Room with Coffered Ceiling",
       description: "Recreation room with white coffered ceiling and coordinated wall finish for entertainment space"
     },
     {
-      id: 14,
+      id: 15,
       image: "/lovable-uploads/77ca8e0a-4cea-4338-bd00-70562d8175a3.png",
       title: "Formal Entry with Mahogany Millwork",
       description: "Rich mahogany millwork staining with detailed column work and coordinated floor-to-ceiling wood finishing"
     },
     {
-      id: 15,
+      id: 16,
       image: "/lovable-uploads/fc84d3eb-3bbc-45a7-bf12-e532c00e2903.png",
       title: "Executive Hallway with Rich Navy Walls",
       description: "Sophisticated dark navy walls with pristine white baseboards and crown molding, featuring polished concrete floors"
     },
     {
-      id: 16,
+      id: 17,
       image: "/lovable-uploads/e70231c5-5905-4e10-b312-28c8c2c09b8c.png",
       title: "Retail Space with Accent Wall",
       description: "Warm beige accent wall with deep navy built-in shelving and industrial ceiling coordination"
     },
     {
-      id: 17,
+      id: 18,
       image: "/lovable-uploads/08df8968-6e2f-42c3-ab45-7b8f96da23bb.png",
       title: "Contemporary Kitchen with Two-Tone Finish",
       description: "Crisp white upper walls with gray lower island and white subway tile backsplash coordination"
     },
     {
-      id: 18,
+      id: 19,
       image: "/lovable-uploads/8dd8b3d4-57b1-4895-9b5c-34c2a7bb5268.png",
       title: "Traditional Living Room with Wainscoting",
       description: "Elegant taupe walls with detailed white wainscoting panels and coffered ceiling with rich wood beams"
     },
     {
-      id: 19,
+      id: 20,
       image: "/lovable-uploads/6e040a21-99a9-4283-a280-8110deef2f68.png",
       title: "Corporate Office with Warm Tones",
       description: "Professional warm beige walls with white trim and coordinated flooring for modern office environment"
     },
     {
-      id: 20,
+      id: 21,
       image: "/lovable-uploads/00f7b82f-ba77-478e-9cfc-ac61baad5e96.png",
       title: "Modern Office with Industrial Details",
       description: "Neutral grey walls with white trim work, exposed ceiling piping and ductwork coordination in industrial finish"
-    },
-    {
-      id: 21,
-      image: "/lovable-uploads/241c467e-6c7b-49fb-8dae-5dea3a423373.png",
-      title: "Contemporary Space with Exposed Beams",
-      description: "Modern living space with exposed structural beam staining and coordinated white ceiling finish work"
     }
   ];
 
