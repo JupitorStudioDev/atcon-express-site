@@ -26,7 +26,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/54fe58c0-ebed-4e15-9c47-75a5ff1e3e20.png",
       title: "Contemporary Office Space",
       description: "Professional commercial painting for modern workspace in Vancouver"
     },
