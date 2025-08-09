@@ -44,7 +44,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 7,
-      image: "https://images.unsplash.com/photo-1556037757-8a0698ab1dcc?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/950aec6e-1e45-4168-9204-45ae250db699.png",
       title: "Heritage Home Restoration",
       description: "Careful restoration of character home exterior in West Vancouver"
     },
