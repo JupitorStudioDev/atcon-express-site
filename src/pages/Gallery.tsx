@@ -20,7 +20,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/91183b86-b56c-438e-a863-a2b24d318150.png",
       title: "Kitchen Cabinet Refinishing",
       description: "Complete cabinet transformation with durable finish in Langley"
     },
