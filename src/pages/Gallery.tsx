@@ -68,7 +68,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 11,
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+      image: "/lovable-uploads/27e1e541-0c6b-457b-b974-b80c9e47fd6e.png",
       title: "Corporate Headquarters",
       description: "Professional painting services for multi-floor office building"
     },
