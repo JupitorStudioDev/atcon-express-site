@@ -74,7 +74,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 12,
-      image: "https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/49f47bc8-a1a4-4c22-868f-dd6b3b88405b.png",
       title: "Staircase & Railing Refinishing",
       description: "Detailed painting and staining for architectural focal points"
     }
