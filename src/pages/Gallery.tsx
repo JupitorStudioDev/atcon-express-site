@@ -115,7 +115,7 @@ const Gallery: React.FC = () => {
                       {project.title}
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      Modern kitchen transformation with perfect finishes
+                      {project.description}
                     </p>
                   </div>
                 </div>
