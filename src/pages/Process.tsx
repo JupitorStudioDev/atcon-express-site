@@ -53,8 +53,8 @@ const Process: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1200&auto=format&fit=crop"
-                  alt="Professional consultation with painting contractor"
+                  src="/lovable-uploads/758f1a56-6dda-4841-beb7-95b1e347cce1.png"
+                  alt="Professional consultation with painting contractor showing color samples and design options"
                   className="w-full rounded-lg shadow-large"
                 />
               </div>
