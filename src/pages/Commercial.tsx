@@ -54,8 +54,8 @@ const Commercial: React.FC = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
-                alt="Professional commercial building painting project"
+                src="/lovable-uploads/75600248-1b25-415f-a017-82b9724fa776.png"
+                alt="Professional commercial office space with modern neutral painting"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
