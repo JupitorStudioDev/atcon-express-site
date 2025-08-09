@@ -50,21 +50,21 @@ const Gallery: React.FC = () => {
     },
     {
       id: 8,
+      image: "/lovable-uploads/fc84d3eb-3bbc-45a7-bf12-e532c00e2903.png",
+      title: "Executive Hallway with Rich Navy Walls",
+      description: "Sophisticated dark navy walls with pristine white baseboards and crown molding, featuring polished concrete floors"
+    },
+    {
+      id: 9,
       image: "/lovable-uploads/2f3f5893-c27e-499e-9efd-bcbd4aeefddc.png",
       title: "Contemporary Open Concept Design",
       description: "Modern grey and white color scheme with exposed beam staining and stone fireplace coordination"
     },
     {
-      id: 9,
+      id: 10,
       image: "/lovable-uploads/1047fd62-332c-4731-af00-b9a8b51fc870.png",
       title: "Estate Home Exterior Renovation",
       description: "Large luxury home exterior with coordinated earth-tone palette and white window trim detailing"
-    },
-    {
-      id: 10,
-      image: "/lovable-uploads/eb300f3f-4267-47a9-99bd-6fe04b17711e.png",
-      title: "Grand Foyer with Curved Staircase",
-      description: "Elegant curved staircase with rich wood stain finish and coordinated white column and trim work"
     },
     {
       id: 11,
@@ -74,57 +74,57 @@ const Gallery: React.FC = () => {
     },
     {
       id: 12,
-      image: "/lovable-uploads/d82d4900-7740-426b-afaf-4070602ea763.png",
-      title: "Custom Home Bar & Entertainment Center",
-      description: "Professional entertainment center cabinet finishing with natural wood stain and built-in storage solutions"
-    },
-    {
-      id: 13,
-      image: "/lovable-uploads/a93d5aa7-9fc9-4ec1-9430-a52e01ab6620.png",
-      title: "Ornate Ceiling & Archway Details",
-      description: "Detailed architectural work featuring yellow coffered ceiling with white trim and decorative archways"
-    },
-    {
-      id: 14,
-      image: "/lovable-uploads/fb9517cd-6f30-4c0b-abc2-ead5682880fa.png",
-      title: "Game Room with Coffered Ceiling",
-      description: "Recreation room with white coffered ceiling and coordinated wall finish for entertainment space"
-    },
-    {
-      id: 15,
-      image: "/lovable-uploads/77ca8e0a-4cea-4338-bd00-70562d8175a3.png",
-      title: "Formal Entry with Mahogany Millwork",
-      description: "Rich mahogany millwork staining with detailed column work and coordinated floor-to-ceiling wood finishing"
-    },
-    {
-      id: 16,
-      image: "/lovable-uploads/fc84d3eb-3bbc-45a7-bf12-e532c00e2903.png",
-      title: "Executive Hallway with Rich Navy Walls",
-      description: "Sophisticated dark navy walls with pristine white baseboards and crown molding, featuring polished concrete floors"
-    },
-    {
-      id: 17,
       image: "/lovable-uploads/e70231c5-5905-4e10-b312-28c8c2c09b8c.png",
       title: "Retail Space with Accent Wall",
       description: "Warm beige accent wall with deep navy built-in shelving and industrial ceiling coordination"
     },
     {
-      id: 18,
+      id: 13,
+      image: "/lovable-uploads/eb300f3f-4267-47a9-99bd-6fe04b17711e.png",
+      title: "Grand Foyer with Curved Staircase",
+      description: "Elegant curved staircase with rich wood stain finish and coordinated white column and trim work"
+    },
+    {
+      id: 14,
+      image: "/lovable-uploads/d82d4900-7740-426b-afaf-4070602ea763.png",
+      title: "Custom Home Bar & Entertainment Center",
+      description: "Professional entertainment center cabinet finishing with natural wood stain and built-in storage solutions"
+    },
+    {
+      id: 15,
       image: "/lovable-uploads/08df8968-6e2f-42c3-ab45-7b8f96da23bb.png",
       title: "Contemporary Kitchen with Two-Tone Finish",
       description: "Crisp white upper walls with gray lower island and white subway tile backsplash coordination"
     },
     {
-      id: 19,
+      id: 16,
+      image: "/lovable-uploads/a93d5aa7-9fc9-4ec1-9430-a52e01ab6620.png",
+      title: "Ornate Ceiling & Archway Details",
+      description: "Detailed architectural work featuring yellow coffered ceiling with white trim and decorative archways"
+    },
+    {
+      id: 17,
       image: "/lovable-uploads/8dd8b3d4-57b1-4895-9b5c-34c2a7bb5268.png",
       title: "Traditional Living Room with Wainscoting",
       description: "Elegant taupe walls with detailed white wainscoting panels and coffered ceiling with rich wood beams"
     },
     {
-      id: 20,
+      id: 18,
+      image: "/lovable-uploads/fb9517cd-6f30-4c0b-abc2-ead5682880fa.png",
+      title: "Game Room with Coffered Ceiling",
+      description: "Recreation room with white coffered ceiling and coordinated wall finish for entertainment space"
+    },
+    {
+      id: 19,
       image: "/lovable-uploads/6e040a21-99a9-4283-a280-8110deef2f68.png",
       title: "Corporate Office with Warm Tones",
       description: "Professional warm beige walls with white trim and coordinated flooring for modern office environment"
+    },
+    {
+      id: 20,
+      image: "/lovable-uploads/77ca8e0a-4cea-4338-bd00-70562d8175a3.png",
+      title: "Formal Entry with Mahogany Millwork",
+      description: "Rich mahogany millwork staining with detailed column work and coordinated floor-to-ceiling wood finishing"
     },
     {
       id: 21,
