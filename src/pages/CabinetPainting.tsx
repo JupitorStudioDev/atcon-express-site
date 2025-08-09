@@ -64,8 +64,8 @@ const CabinetPainting: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1600&auto=format&fit=crop"
-                alt="Modern kitchen with professionally painted cabinets"
+                src="/lovable-uploads/db3c1c3e-95ba-40e3-a6d4-dd545c6e9dd6.png"
+                alt="Modern kitchen with professionally painted white upper and gray lower cabinets"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
