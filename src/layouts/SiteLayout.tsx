@@ -112,9 +112,12 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
         )}
 
         {/* Mobile Navigation Drawer */}
-        <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-lg border-r border-gray-200 z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
-          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}>
+        <div 
+          className={`fixed top-0 left-0 h-full w-80 border-r border-gray-200 z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+            isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
+          style={{ backgroundColor: '#ffffff' }}
+        >
           <div className="flex items-center justify-between p-4 border-b border-border">
             <div className="flex items-center space-x-2">
               <img src="/maple-leaf-logo.svg" alt="Atcon Decorating Logo" className="w-8 h-8 object-contain" />
