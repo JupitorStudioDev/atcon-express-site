@@ -125,8 +125,8 @@ const Process: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200&auto=format&fit=crop"
-                  alt="Professional surface preparation and sanding"
+                  src="/lovable-uploads/93bf773e-721a-4766-beca-3bb0c03a55df.png"
+                  alt="Professional painter preparing wall surface with proper tools and equipment"
                   className="w-full rounded-lg shadow-large"
                 />
               </div>
