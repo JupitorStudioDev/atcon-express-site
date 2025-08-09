@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Menu, X } from 'lucide-react';
 
 interface SiteLayoutProps {
   children: React.ReactNode;
@@ -8,6 +9,8 @@ interface SiteLayoutProps {
 }
 
 const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = false }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Trust Bar - Desktop Only */}
@@ -86,15 +89,81 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
             </nav>
 
             {/* Mobile Menu Button */}
-            <button className="lg:hidden p-2">
-              <div className="w-6 h-6 flex flex-col justify-center items-center space-y-1">
-                <span className="w-5 h-0.5 bg-foreground"></span>
-                <span className="w-5 h-0.5 bg-foreground"></span>
-                <span className="w-5 h-0.5 bg-foreground"></span>
-              </div>
+            <button 
+              className="lg:hidden p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden border-t border-border bg-background">
+            <nav className="container mx-auto px-4 py-4">
+              <div className="flex flex-col space-y-4">
+                <a 
+                  href="/" 
+                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                </a>
+                <a 
+                  href="/about" 
+                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About
+                </a>
+                <a 
+                  href="/services" 
+                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Our Services
+                </a>
+                <a 
+                  href="/process" 
+                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Our Process
+                </a>
+                <a 
+                  href="/gallery" 
+                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Project Gallery
+                </a>
+                <a 
+                  href="/contact" 
+                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact
+                </a>
+                <div className="pt-4 border-t border-border">
+                  <a href="tel:+16047204315" className="text-sm font-semibold text-foreground hover:text-accent-warm transition-colors block mb-3">
+                    (604) 720-4315
+                  </a>
+                  <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Button variant="cta" size="sm" className="w-full">
+                      Get a Free Quote
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Main Content */}
