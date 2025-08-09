@@ -30,8 +30,8 @@ const Services: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300 h-full flex flex-col">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="/lovable-uploads/b0b1424d-8b82-4c4a-8c3d-1b5d057db205.png"
-                  alt="Beautiful navy blue residential home exterior with stone accents showcasing professional painting services"
+                  src="/lovable-uploads/79e457e7-9675-4218-a33d-6ebfa073ec2a.png"
+                  alt="Beautiful residential home with pool showcasing professional exterior painting services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
