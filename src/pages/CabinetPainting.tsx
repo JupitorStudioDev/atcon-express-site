@@ -1,12 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const CabinetPainting: React.FC = () => {
   return (
     <SiteLayout>
+      <SEO 
+        title="Cabinet Painting Vancouver - Kitchen Cabinet Refinishing | Atcon"
+        description="Transform your kitchen with professional cabinet painting services. Save 60-80% vs replacement. Expert cabinet refinishing in Vancouver & Lower Mainland."
+        keywords="cabinet painting Vancouver, kitchen cabinet refinishing, cabinet painters BC, kitchen makeover Vancouver, cabinet painting cost"
+        canonical="https://atcon-decorating.lovable.app/services/cabinet-painting"
+        schema={{
+          "@type": ["Service"],
+          "name": "Cabinet Painting and Refinishing",
+          "description": "Professional kitchen cabinet painting and refinishing services",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Atcon Decorating Limited"
+          }
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">

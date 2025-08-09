@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -31,6 +32,22 @@ const Contact: React.FC = () => {
 
   return (
     <SiteLayout>
+      <SEO 
+        title="Contact Atcon Decorating - Free Painting Quotes Vancouver"
+        description="Get a free painting quote from Vancouver's trusted contractors. 30+ years experience, A+ BBB rating. Serving Vancouver, North Vancouver & Lower Mainland."
+        keywords="contact Atcon Decorating, free painting quote Vancouver, painting contractors North Vancouver, painting estimate BC"
+        canonical="https://atcon-decorating.lovable.app/contact"
+        schema={{
+          "@type": ["LocalBusiness", "ContactPage"],
+          "telephone": "+1-604-720-4315",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-604-720-4315",
+            "contactType": "customer service",
+            "availableLanguage": "English"
+          }
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">

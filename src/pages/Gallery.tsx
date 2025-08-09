@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Home, Building2, Palette } from 'lucide-react';
 
@@ -136,6 +137,17 @@ const Gallery: React.FC = () => {
 
   return (
     <SiteLayout>
+      <SEO 
+        title="Project Gallery - Painting Portfolio | Atcon Decorating Vancouver"
+        description="View our portfolio of residential and commercial painting projects in Vancouver. Quality workmanship showcased in our project gallery. 30+ years experience."
+        keywords="painting gallery Vancouver, painting portfolio BC, before after painting, painting examples Vancouver, Atcon painting projects"
+        canonical="https://atcon-decorating.lovable.app/gallery"
+        schema={{
+          "@type": ["WebPage", "ImageGallery"],
+          "name": "Project Gallery",
+          "description": "Portfolio of our residential and commercial painting projects"
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">

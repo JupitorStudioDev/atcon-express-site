@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import heroImage from '@/assets/hero-painting.jpg';
@@ -8,6 +9,44 @@ import heroImage from '@/assets/hero-painting.jpg';
 const Home: React.FC = () => {
   return (
     <SiteLayout>
+      <SEO 
+        title="Atcon Decorating - Master Painters in Vancouver Since 1992"
+        description="Expert residential & commercial painting services in Vancouver and Lower Mainland. 30+ years experience, A+ BBB rating, licensed & insured. Free quotes."
+        keywords="painting contractors Vancouver, residential painting, commercial painting, cabinet painting, North Vancouver painters, BBB A+ rated painters, licensed painters BC"
+        canonical="https://atcon-decorating.lovable.app/"
+        schema={{
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            "name": "Painting Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Residential Painting",
+                  "description": "Interior and exterior painting for homes"
+                }
+              },
+              {
+                "@type": "Offer", 
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Commercial Painting",
+                  "description": "Professional painting for businesses and commercial properties"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service", 
+                  "name": "Cabinet Painting",
+                  "description": "Kitchen and bathroom cabinet refinishing and painting"
+                }
+              }
+            ]
+          }
+        }}
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-hero text-white">
         <div className="absolute inset-0">

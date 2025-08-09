@@ -1,12 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About: React.FC = () => {
   return (
     <SiteLayout>
+      <SEO 
+        title="About Atcon Decorating - 30+ Years of Excellence in Vancouver"
+        description="Learn about Atcon Decorating's 30+ year history serving Vancouver. A+ BBB rating, licensed & insured painting contractors specializing in residential and commercial projects."
+        keywords="about Atcon Decorating, Vancouver painting company history, BBB A+ painters, licensed painting contractors BC"
+        canonical="https://atcon-decorating.lovable.app/about"
+        schema={{
+          "@type": ["LocalBusiness", "AboutPage"],
+          "foundingDate": "1992",
+          "awards": ["A+ BBB Rating since 2003"]
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">

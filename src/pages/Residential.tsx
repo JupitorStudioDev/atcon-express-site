@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ShieldCheck, Palette, Zap } from 'lucide-react';
@@ -8,6 +9,22 @@ import { ShieldCheck, Palette, Zap } from 'lucide-react';
 const Residential: React.FC = () => {
   return (
     <SiteLayout>
+      <SEO 
+        title="Residential Painting Services Vancouver - Home Painters | Atcon"
+        description="Professional interior & exterior residential painting in Vancouver. House painters with 30+ years experience. Licensed, insured, A+ BBB rated. Free estimates."
+        keywords="residential painting Vancouver, house painters BC, interior painting, exterior painting, home painting contractors Vancouver, house painting cost"
+        canonical="https://atcon-decorating.lovable.app/services/residential"
+        schema={{
+          "@type": ["Service"],
+          "name": "Residential Painting Services",
+          "description": "Professional residential interior and exterior painting services",
+          "serviceType": "Residential Painting",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Atcon Decorating Limited"
+          }
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">

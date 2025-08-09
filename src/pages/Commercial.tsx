@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Building2, ShoppingBag, Factory, Utensils, Heart, GraduationCap, TrendingUp, Users, Shield, Briefcase } from 'lucide-react';
@@ -8,6 +9,22 @@ import { Building2, ShoppingBag, Factory, Utensils, Heart, GraduationCap, Trendi
 const Commercial: React.FC = () => {
   return (
     <SiteLayout>
+      <SEO 
+        title="Commercial Painting Services Vancouver - Business Painters | Atcon"
+        description="Professional commercial painting for offices, retail, warehouses & more. Experienced business painters serving Vancouver & Lower Mainland. Licensed & insured."
+        keywords="commercial painting Vancouver, business painters BC, office painting, retail painting, warehouse painting, commercial contractors Vancouver"
+        canonical="https://atcon-decorating.lovable.app/services/commercial"
+        schema={{
+          "@type": ["Service"],
+          "name": "Commercial Painting Services",
+          "description": "Professional commercial painting for businesses",
+          "serviceType": "Commercial Painting",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Atcon Decorating Limited"
+          }
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">

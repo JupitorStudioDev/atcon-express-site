@@ -1,12 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Process: React.FC = () => {
   return (
     <SiteLayout>
+      <SEO 
+        title="Our Painting Process - Professional Standards | Atcon Decorating"
+        description="Learn about Atcon's proven painting process. Comprehensive preparation, quality materials, and attention to detail ensure lasting results. 30+ years experience."
+        keywords="painting process Vancouver, professional painting standards, painting preparation, quality painting methods, Atcon painting process"
+        canonical="https://atcon-decorating.lovable.app/process"
+        schema={{
+          "@type": ["WebPage"],
+          "name": "Our Painting Process",
+          "description": "Detailed explanation of our professional painting process and standards"
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
