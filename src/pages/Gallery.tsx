@@ -62,7 +62,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 10,
-      image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/341f1932-6c4a-40e1-a444-4ebe375a00c6.png",
       title: "Gourmet Kitchen Makeover",
       description: "High-end kitchen cabinet refinishing with durability guarantee"
     },
