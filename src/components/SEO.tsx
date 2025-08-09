@@ -72,6 +72,11 @@ const SEO: React.FC<SEOProps> = ({
       {/* Canonical URL */}
       <link rel="canonical" href={canonical} />
       
+      {/* Preload hero image for faster loading */}
+      {canonical === "https://atcon-decorating.lovable.app/" && (
+        <link rel="preload" as="image" href="/lovable-uploads/59f049d3-31d2-47b7-9e4e-086684a6471d.png" fetchPriority="high" />
+      )}
+      
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonical} />

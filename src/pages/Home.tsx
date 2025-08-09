@@ -54,6 +54,11 @@ const Home: React.FC = () => {
             src="/lovable-uploads/59f049d3-31d2-47b7-9e4e-086684a6471d.png"
             alt="Modern commercial interior showcasing professional painting services in Vancouver"
             className="w-full h-full object-cover opacity-30"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width="1920"
+            height="1080"
           />
         </div>
         <div className="relative container mx-auto px-4 py-24 lg:py-32">
