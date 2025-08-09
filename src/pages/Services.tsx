@@ -2,6 +2,7 @@ import React from 'react';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Home, Building2, Palette } from 'lucide-react';
 
 const Services: React.FC = () => {
   return (
@@ -40,17 +41,23 @@ const Services: React.FC = () => {
                 </p>
                 <div className="mt-auto">
                   <div className="space-y-3 mb-6">
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
-                      Interior & exterior painting
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Home className="w-5 h-5 text-trust-green" />
+                      </div>
+                      <span className="text-sm mt-3">Interior & exterior painting</span>
                     </div>
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
-                      Color consultation
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Palette className="w-5 h-5 text-trust-green" />
+                      </div>
+                      <span className="text-sm mt-3">Color consultation</span>
                     </div>
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-trust-green rounded-full mr-3"></span>
-                      Surface preparation & repair
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Home className="w-5 h-5 text-trust-green" />
+                      </div>
+                      <span className="text-sm mt-3">Surface preparation & repair</span>
                     </div>
                   </div>
                   <a href="/services/residential">
@@ -78,17 +85,23 @@ const Services: React.FC = () => {
                 </p>
                 <div className="mt-auto">
                   <div className="space-y-3 mb-6">
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
-                      Office & retail painting
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Building2 className="w-5 h-5 text-trust-blue" />
+                      </div>
+                      <span className="text-sm mt-3">Office & retail painting</span>
                     </div>
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
-                      Industrial coatings
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Building2 className="w-5 h-5 text-trust-blue" />
+                      </div>
+                      <span className="text-sm mt-3">Industrial coatings</span>
                     </div>
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-trust-blue rounded-full mr-3"></span>
-                      Scheduled maintenance
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Building2 className="w-5 h-5 text-trust-blue" />
+                      </div>
+                      <span className="text-sm mt-3">Scheduled maintenance</span>
                     </div>
                   </div>
                   <a href="/services/commercial">
@@ -116,17 +129,23 @@ const Services: React.FC = () => {
                 </p>
                 <div className="mt-auto">
                   <div className="space-y-3 mb-6">
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
-                      Kitchen cabinet refinishing
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Palette className="w-5 h-5 text-accent-warm" />
+                      </div>
+                      <span className="text-sm mt-3">Kitchen cabinet refinishing</span>
                     </div>
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
-                      Custom color matching
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Palette className="w-5 h-5 text-accent-warm" />
+                      </div>
+                      <span className="text-sm mt-3">Custom color matching</span>
                     </div>
-                    <div className="flex items-center text-sm">
-                      <span className="w-2 h-2 bg-accent-warm rounded-full mr-3"></span>
-                      Hardware upgrades
+                    <div className="flex items-start space-x-3">
+                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Palette className="w-5 h-5 text-accent-warm" />
+                      </div>
+                      <span className="text-sm mt-3">Hardware upgrades</span>
                     </div>
                   </div>
                   <a href="/services/cabinet-painting">
