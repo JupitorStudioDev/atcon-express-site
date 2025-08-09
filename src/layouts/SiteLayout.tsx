@@ -75,9 +75,6 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               <a href="/" className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors">
                 Home
               </a>
-              <a href="/about" className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors">
-                About
-              </a>
               
               {/* Services Dropdown */}
               <div className="relative">
@@ -140,6 +137,9 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               </a>
               <a href="/contact" className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors">
                 Contact
+              </a>
+              <a href="/about" className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors">
+                About
               </a>
             </nav>
 
@@ -212,14 +212,6 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
                 <span>Home</span>
               </a>
               <a 
-                href="/about" 
-                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <User className="w-5 h-5" />
-                <span>About</span>
-              </a>
-              <a 
                 href="/services" 
                 className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -271,6 +263,14 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               >
                 <Phone className="w-5 h-5" />
                 <span>Contact</span>
+              </a>
+              <a 
+                href="/about" 
+                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <User className="w-5 h-5" />
+                <span>About</span>
               </a>
             </div>
             
