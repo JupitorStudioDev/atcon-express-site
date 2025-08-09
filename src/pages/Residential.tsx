@@ -99,8 +99,8 @@ const Residential: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop"
-                  alt="Professional exterior house painting services"
+                  src="/lovable-uploads/edabb80e-1e29-4103-82bf-59298a1372bd.png"
+                  alt="Beautiful blue craftsman style house exterior showcasing professional residential painting services in Vancouver"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
