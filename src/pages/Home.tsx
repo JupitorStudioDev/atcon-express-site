@@ -183,48 +183,95 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/277c64a6-eade-4e3c-80f3-45c3eb53eef7.png"
-                alt="Heritage Kitchen Cabinet Refinishing"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/3f14c301-6d9d-42e6-9cd2-45b68c82a0d5.png"
-                alt="Formal Living Room Restoration"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/41c04dc9-2bdf-40d7-ac3a-ae3665e9fc63.png"
-                alt="Luxury Home Exterior Transformation"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/2f3f5893-c27e-499e-9efd-bcbd4aeefddc.png"
-                alt="Contemporary Open Concept Design"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/eb300f3f-4267-47a9-99bd-6fe04b17711e.png"
-                alt="Grand Foyer with Curved Staircase"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/77ca8e0a-4cea-4338-bd00-70562d8175a3.png"
-                alt="Formal Entry with Mahogany Millwork"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
+            <Card className="group hover:shadow-large transition-all duration-300 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src="/lovable-uploads/277c64a6-eade-4e3c-80f3-45c3eb53eef7.png"
+                  alt="Heritage Kitchen Cabinet Refinishing"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-sm group-hover:text-accent-warm transition-colors">
+                  Heritage Kitchen Cabinet Refinishing
+                </h3>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-large transition-all duration-300 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src="/lovable-uploads/3f14c301-6d9d-42e6-9cd2-45b68c82a0d5.png"
+                  alt="Formal Living Room Restoration"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-sm group-hover:text-accent-warm transition-colors">
+                  Formal Living Room Restoration
+                </h3>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-large transition-all duration-300 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src="/lovable-uploads/41c04dc9-2bdf-40d7-ac3a-ae3665e9fc63.png"
+                  alt="Luxury Home Exterior Transformation"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-sm group-hover:text-accent-warm transition-colors">
+                  Luxury Home Exterior Transformation
+                </h3>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-large transition-all duration-300 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src="/lovable-uploads/2f3f5893-c27e-499e-9efd-bcbd4aeefddc.png"
+                  alt="Contemporary Open Concept Design"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-sm group-hover:text-accent-warm transition-colors">
+                  Contemporary Open Concept Design
+                </h3>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-large transition-all duration-300 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src="/lovable-uploads/eb300f3f-4267-47a9-99bd-6fe04b17711e.png"
+                  alt="Grand Foyer with Curved Staircase"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-sm group-hover:text-accent-warm transition-colors">
+                  Grand Foyer with Curved Staircase
+                </h3>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-large transition-all duration-300 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
+                <img 
+                  src="/lovable-uploads/77ca8e0a-4cea-4338-bd00-70562d8175a3.png"
+                  alt="Formal Entry with Mahogany Millwork"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold text-sm group-hover:text-accent-warm transition-colors">
+                  Formal Entry with Mahogany Millwork
+                </h3>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="text-center mt-12">
