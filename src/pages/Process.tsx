@@ -208,8 +208,8 @@ const Process: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1556037757-8a0698ab1dcc?q=80&w=1600&auto=format&fit=crop"
-                  alt="Final walkthrough and project completion"
+                  src="/lovable-uploads/b5b6e4a0-458e-41cb-ae76-b7de9f7e2002.png"
+                  alt="Professional final walkthrough with contractor and client reviewing completed painting project in finished room"
                   className="w-full rounded-lg shadow-large"
                 />
               </div>
