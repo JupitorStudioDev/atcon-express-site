@@ -65,8 +65,8 @@ const Residential: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src="/lovable-uploads/9f3cdd4a-31a9-4508-8e69-9138c4914ced.png"
-                alt="Modern green kitchen interior and contemporary home exterior showcasing comprehensive residential painting services"
+                src="/lovable-uploads/b6a92a5c-9ee9-4d9d-9f58-7870b3883e31.png"
+                alt="Modern bedroom interior with panoramic windows and elegant house exterior showcasing comprehensive residential painting services"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
