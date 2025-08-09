@@ -64,8 +64,8 @@ const Process: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop"
-                  alt="Detailed written estimate and project planning"
+                  src="/lovable-uploads/503739e7-c856-4e81-ad34-48f0b28f11a6.png"
+                  alt="Professional consultation meeting with detailed estimate documents and laptop"
                   className="w-full rounded-lg shadow-large"
                 />
               </div>
