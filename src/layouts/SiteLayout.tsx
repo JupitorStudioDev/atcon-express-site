@@ -277,7 +277,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
             <div className="mt-8 pt-8 border-t border-gray-200">
               <a href="tel:+16047204315" className="flex items-center space-x-3 text-sm font-semibold text-foreground hover:text-accent-warm transition-colors block mb-4">
                 <Phone className="w-5 h-5" />
-                📞 (604) 720-4315
+                (604) 720-4315
               </a>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button variant="cta" size="sm" className="w-full">
