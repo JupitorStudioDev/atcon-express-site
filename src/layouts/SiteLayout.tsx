@@ -63,7 +63,10 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               <div className="w-10 h-10 flex items-center justify-center">
                 <img src="/maple-leaf-logo.svg" alt="Atcon Decorating Logo" className="w-10 h-10 object-contain" />
               </div>
-              <span className="text-xl font-bold text-foreground">Atcon Decorating</span>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-foreground leading-tight">Atcon</span>
+                <span className="text-xs text-muted-foreground leading-tight">Painting and Finishing</span>
+              </div>
             </div>
 
             {/* Navigation - Desktop */}
@@ -129,7 +132,10 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
           >
             <div className="flex items-center space-x-2">
               <img src="/maple-leaf-logo.svg" alt="Atcon Decorating Logo" className="w-8 h-8 object-contain" />
-              <span className="text-lg font-bold text-foreground">Atcon Decorating</span>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-foreground leading-tight">Atcon</span>
+                <span className="text-xs text-muted-foreground leading-tight">Painting and Finishing</span>
+              </div>
             </div>
             <button 
               onClick={() => setIsMobileMenuOpen(false)}
