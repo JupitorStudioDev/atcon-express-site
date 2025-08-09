@@ -70,7 +70,7 @@ const Gallery: React.FC = () => {
       id: 11,
       image: "/lovable-uploads/27e1e541-0c6b-457b-b974-b80c9e47fd6e.png",
       title: "Corporate Headquarters",
-      description: "Professional painting services for multi-floor office building"
+      description: "Multi-floor corporate office finished with precision, delivering a clean, modern, and professional workspace."
     },
     {
       id: 12,
