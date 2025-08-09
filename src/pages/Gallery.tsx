@@ -8,7 +8,7 @@ const Gallery: React.FC = () => {
   const projects = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/f790be10-5fb0-4de8-adf4-dedf94f1c9b6.png",
       title: "Modern Exterior Transformation",
       description: "Complete exterior makeover with premium weather-resistant paint in North Vancouver"
     },
