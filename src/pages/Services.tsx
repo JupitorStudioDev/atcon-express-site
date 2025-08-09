@@ -104,7 +104,7 @@ const Services: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300 h-full flex flex-col">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="/lovable-uploads/0fb7ef2b-c3bd-4ab3-a83e-c1c7b88fff07.png"
+                  src="/lovable-uploads/2530b846-1508-4c81-96c8-48826022089a.png"
                   alt="Professional kitchen cabinet painting and refinishing services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
