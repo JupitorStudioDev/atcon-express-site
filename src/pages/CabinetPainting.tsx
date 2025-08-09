@@ -227,30 +227,36 @@ const CabinetPainting: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="w-20 h-20 bg-white border-2 border-border rounded-lg mx-auto mb-3 shadow-soft"></div>
-              <span className="text-sm font-medium">Classic White</span>
+              <h4 className="text-sm font-semibold mb-1">Classic White</h4>
+              <p className="text-xs text-muted-foreground">Timeless and bright, works in any kitchen style.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-slate-100 rounded-lg mx-auto mb-3 shadow-soft"></div>
-              <span className="text-sm font-medium">Off-White</span>
+              <div className="w-20 h-20 bg-stone-100 rounded-lg mx-auto mb-3 shadow-soft"></div>
+              <h4 className="text-sm font-semibold mb-1">Warm Off-White / Cream</h4>
+              <p className="text-xs text-muted-foreground">Softer alternative to pure white, adds warmth.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-gray-300 rounded-lg mx-auto mb-3 shadow-soft"></div>
-              <span className="text-sm font-medium">Light Gray</span>
+              <div className="w-20 h-20 bg-stone-300 rounded-lg mx-auto mb-3 shadow-soft"></div>
+              <h4 className="text-sm font-semibold mb-1">Light Warm Gray (Greige)</h4>
+              <p className="text-xs text-muted-foreground">Neutral with a touch of beige for versatility.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-stone-400 rounded-lg mx-auto mb-3 shadow-soft"></div>
+              <h4 className="text-sm font-semibold mb-1">Soft Taupe</h4>
+              <p className="text-xs text-muted-foreground">Elegant, pairs well with natural wood and stone.</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-gray-600 rounded-lg mx-auto mb-3 shadow-soft"></div>
-              <span className="text-sm font-medium">Charcoal</span>
+              <h4 className="text-sm font-semibold mb-1">Charcoal Gray</h4>
+              <p className="text-xs text-muted-foreground">Rich, dramatic, and very popular for two-tone kitchens.</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-blue-900 rounded-lg mx-auto mb-3 shadow-soft"></div>
-              <span className="text-sm font-medium">Navy Blue</span>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-green-800 rounded-lg mx-auto mb-3 shadow-soft"></div>
-              <span className="text-sm font-medium">Forest Green</span>
+              <div className="w-20 h-20 bg-black rounded-lg mx-auto mb-3 shadow-soft"></div>
+              <h4 className="text-sm font-semibold mb-1">Black Onyx</h4>
+              <p className="text-xs text-muted-foreground">Bold, sophisticated, and modern, works well for lower cabinets</p>
             </div>
           </div>
 
