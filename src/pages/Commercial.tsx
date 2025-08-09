@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Building2, ShoppingBag, Factory, Utensils, Heart, GraduationCap, TrendingUp, Users, Shield, Briefcase } from 'lucide-react';
 
 const Commercial: React.FC = () => {
   return (
@@ -77,7 +78,7 @@ const Commercial: React.FC = () => {
             <Card className="p-6 text-center hover:shadow-large transition-all duration-300">
               <CardContent className="p-0">
                 <div className="w-16 h-16 bg-trust-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">🏢</span>
+                  <Building2 className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Office Buildings</h3>
                 <p className="text-muted-foreground text-sm">
@@ -89,7 +90,7 @@ const Commercial: React.FC = () => {
             <Card className="p-6 text-center hover:shadow-large transition-all duration-300">
               <CardContent className="p-0">
                 <div className="w-16 h-16 bg-accent-warm rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">🛍️</span>
+                  <ShoppingBag className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Retail Spaces</h3>
                 <p className="text-muted-foreground text-sm">
@@ -101,7 +102,7 @@ const Commercial: React.FC = () => {
             <Card className="p-6 text-center hover:shadow-large transition-all duration-300">
               <CardContent className="p-0">
                 <div className="w-16 h-16 bg-trust-green rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">🏭</span>
+                  <Factory className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Industrial</h3>
                 <p className="text-muted-foreground text-sm">
@@ -113,7 +114,7 @@ const Commercial: React.FC = () => {
             <Card className="p-6 text-center hover:shadow-large transition-all duration-300">
               <CardContent className="p-0">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-primary-foreground font-bold text-xl">🍽️</span>
+                  <Utensils className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Hospitality</h3>
                 <p className="text-muted-foreground text-sm">
@@ -125,7 +126,7 @@ const Commercial: React.FC = () => {
             <Card className="p-6 text-center hover:shadow-large transition-all duration-300">
               <CardContent className="p-0">
                 <div className="w-16 h-16 bg-trust-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">🏥</span>
+                  <Heart className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Healthcare</h3>
                 <p className="text-muted-foreground text-sm">
@@ -137,7 +138,7 @@ const Commercial: React.FC = () => {
             <Card className="p-6 text-center hover:shadow-large transition-all duration-300">
               <CardContent className="p-0">
                 <div className="w-16 h-16 bg-accent-warm rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">🎓</span>
+                  <GraduationCap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-3">Educational</h3>
                 <p className="text-muted-foreground text-sm">
@@ -211,7 +212,7 @@ const Commercial: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-trust-green rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">📈</span>
+                <TrendingUp className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Property Value</h3>
               <p className="text-muted-foreground text-sm">Increases commercial property value and marketability</p>
@@ -219,7 +220,7 @@ const Commercial: React.FC = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-trust-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">👥</span>
+                <Users className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Professional Image</h3>
               <p className="text-muted-foreground text-sm">Enhances business credibility and customer perception</p>
@@ -227,7 +228,7 @@ const Commercial: React.FC = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-accent-warm rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">🛡️</span>
+                <Shield className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Asset Protection</h3>
               <p className="text-muted-foreground text-sm">Protects building surfaces from weather and wear</p>
@@ -235,7 +236,7 @@ const Commercial: React.FC = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-primary-foreground font-bold text-xl">💼</span>
+                <Briefcase className="w-6 h-6 text-primary-foreground" />
               </div>
               <h3 className="font-semibold mb-2">Productivity</h3>
               <p className="text-muted-foreground text-sm">Creates a pleasant, motivating work environment</p>
