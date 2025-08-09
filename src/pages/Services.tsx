@@ -43,22 +43,16 @@ const Services: React.FC = () => {
                 <div className="mt-auto">
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Home className="w-5 h-5 text-trust-green" />
-                      </div>
-                      <span className="text-sm mt-3">Interior & exterior painting</span>
+                      <div className="w-2 h-2 bg-trust-green rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Interior & exterior painting</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Palette className="w-5 h-5 text-trust-green" />
-                      </div>
-                      <span className="text-sm mt-3">Color consultation</span>
+                      <div className="w-2 h-2 bg-trust-green rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Color consultation</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Home className="w-5 h-5 text-trust-green" />
-                      </div>
-                      <span className="text-sm mt-3">Surface preparation & repair</span>
+                      <div className="w-2 h-2 bg-trust-green rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Surface preparation & repair</span>
                     </div>
                   </div>
                   <Link to="/services/residential">
@@ -87,22 +81,16 @@ const Services: React.FC = () => {
                 <div className="mt-auto">
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Building2 className="w-5 h-5 text-trust-blue" />
-                      </div>
-                      <span className="text-sm mt-3">Office & retail painting</span>
+                      <div className="w-2 h-2 bg-trust-blue rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Office & retail painting</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Building2 className="w-5 h-5 text-trust-blue" />
-                      </div>
-                      <span className="text-sm mt-3">Industrial coatings</span>
+                      <div className="w-2 h-2 bg-trust-blue rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Industrial coatings</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Building2 className="w-5 h-5 text-trust-blue" />
-                      </div>
-                      <span className="text-sm mt-3">Scheduled maintenance</span>
+                      <div className="w-2 h-2 bg-trust-blue rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Scheduled maintenance</span>
                     </div>
                   </div>
                   <Link to="/services/commercial">
@@ -131,22 +119,16 @@ const Services: React.FC = () => {
                 <div className="mt-auto">
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Palette className="w-5 h-5 text-accent-warm" />
-                      </div>
-                      <span className="text-sm mt-3">Kitchen cabinet refinishing</span>
+                      <div className="w-2 h-2 bg-accent-warm rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Kitchen cabinet refinishing</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Palette className="w-5 h-5 text-accent-warm" />
-                      </div>
-                      <span className="text-sm mt-3">Custom color matching</span>
+                      <div className="w-2 h-2 bg-accent-warm rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Custom color matching</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Palette className="w-5 h-5 text-accent-warm" />
-                      </div>
-                      <span className="text-sm mt-3">Hardware upgrades</span>
+                      <div className="w-2 h-2 bg-accent-warm rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-sm">Hardware upgrades</span>
                     </div>
                   </div>
                   <Link to="/services/cabinet-painting">
