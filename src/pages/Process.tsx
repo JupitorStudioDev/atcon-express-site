@@ -9,13 +9,22 @@ const Process: React.FC = () => {
       {/* Hero Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              The Atcon Standard: Our Meticulous Painting Process
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Every project follows our proven 6-step process, ensuring exceptional results that exceed your expectations.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+                The Atcon Standard: Our Meticulous Painting Process
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8">
+                Every project follows our proven 6-step process, ensuring exceptional results that exceed your expectations.
+              </p>
+            </div>
+            <div>
+              <img 
+                src="/lovable-uploads/584c5ed9-5222-4b19-bde3-02f8e87d5f54.png"
+                alt="Professional contractor and client celebrating successful completion of painting project in beautifully finished room"
+                className="w-full rounded-lg shadow-large"
+              />
+            </div>
           </div>
         </div>
       </section>
