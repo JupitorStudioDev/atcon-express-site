@@ -12,7 +12,7 @@ const About: React.FC = () => {
         title="About Atcon Decorating - 30+ Years of Excellence in Vancouver"
         description="Learn about Atcon Decorating's 30+ year history serving Vancouver. A+ BBB rating, licensed & insured painting contractors specializing in residential and commercial projects."
         keywords="about Atcon Decorating, Vancouver painting company history, BBB A+ painters, licensed painting contractors BC"
-        canonical="https://atcon-decorating.lovable.app/about"
+        canonical="https://www.atcondecor.com/about"
         schema={{
           "@type": ["LocalBusiness", "AboutPage"],
           "foundingDate": "1992",

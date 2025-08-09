@@ -13,7 +13,7 @@ const Commercial: React.FC = () => {
         title="Commercial Painting Services Vancouver - Business Painters | Atcon"
         description="Professional commercial painting for offices, retail, warehouses & more. Experienced business painters serving Vancouver & Lower Mainland. Licensed & insured."
         keywords="commercial painting Vancouver, business painters BC, office painting, retail painting, warehouse painting, commercial contractors Vancouver"
-        canonical="https://atcon-decorating.lovable.app/services/commercial"
+        canonical="https://www.atcondecor.com/services/commercial"
         schema={{
           "@type": ["Service"],
           "name": "Commercial Painting Services",

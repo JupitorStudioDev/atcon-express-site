@@ -13,15 +13,15 @@ const SEO: React.FC<SEOProps> = ({
   title = "Atcon Decorating - Master Painters in Vancouver Since 1992",
   description = "Expert residential & commercial painting services in Vancouver and Lower Mainland. 30+ years experience, A+ BBB rating, licensed & insured. Free quotes.",
   keywords = "painting contractors Vancouver, residential painting, commercial painting, cabinet painting, North Vancouver painters, BBB A+ rated painters, licensed painters BC",
-  canonical = "https://atcon-decorating.lovable.app/",
-  ogImage = "https://atcon-decorating.lovable.app/maple-leaf-logo.svg",
+  canonical = "https://www.atcondecor.com/",
+  ogImage = "https://www.atcondecor.com/maple-leaf-logo.svg",
   schema
 }) => {
   const baseSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Atcon Decorating Limited",
-    "image": "https://atcon-decorating.lovable.app/maple-leaf-logo.svg",
+    "image": "https://www.atcondecor.com/maple-leaf-logo.svg",
     "description": "Expert residential and commercial painting services in Vancouver and Lower Mainland since 1992.",
     "address": {
       "@type": "PostalAddress",
@@ -37,7 +37,7 @@ const SEO: React.FC<SEOProps> = ({
       "longitude": -123.0773
     },
     "telephone": "+1-604-720-4315",
-    "url": "https://atcon-decorating.lovable.app",
+    "url": "https://www.atcondecor.com",
     "openingHours": "Mo-Fr 08:00-17:00",
     "priceRange": "$$",
     "aggregateRating": {
@@ -73,7 +73,7 @@ const SEO: React.FC<SEOProps> = ({
       <link rel="canonical" href={canonical} />
       
       {/* Preload hero image for faster loading */}
-      {canonical === "https://atcon-decorating.lovable.app/" && (
+      {canonical === "https://www.atcondecor.com/" && (
         <link rel="preload" as="image" href="/lovable-uploads/59f049d3-31d2-47b7-9e4e-086684a6471d.png" fetchPriority="high" />
       )}
       

@@ -13,7 +13,7 @@ const Services: React.FC = () => {
         title="Professional Painting Services Vancouver - Atcon Decorating"
         description="Comprehensive residential, commercial, and cabinet painting services in Vancouver. Expert interior/exterior painting, staining, and finishing. Free estimates available."
         keywords="painting services Vancouver, residential painting, commercial painting, cabinet painting, interior painting, exterior painting, house painters Vancouver"
-        canonical="https://atcon-decorating.lovable.app/services"
+        canonical="https://www.atcondecor.com/services"
         schema={{
           "@type": ["LocalBusiness", "Service"],
           "serviceType": "Painting Services",

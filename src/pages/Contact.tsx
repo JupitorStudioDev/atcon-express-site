@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
         title="Contact Atcon Decorating - Free Painting Quotes Vancouver"
         description="Get a free painting quote from Vancouver's trusted contractors. 30+ years experience, A+ BBB rating. Serving Vancouver, North Vancouver & Lower Mainland."
         keywords="contact Atcon Decorating, free painting quote Vancouver, painting contractors North Vancouver, painting estimate BC"
-        canonical="https://atcon-decorating.lovable.app/contact"
+        canonical="https://www.atcondecor.com/contact"
         schema={{
           "@type": ["LocalBusiness", "ContactPage"],
           "telephone": "+1-604-720-4315",

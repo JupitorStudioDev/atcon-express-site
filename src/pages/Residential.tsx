@@ -13,7 +13,7 @@ const Residential: React.FC = () => {
         title="Residential Painting Services Vancouver - Home Painters | Atcon"
         description="Professional interior & exterior residential painting in Vancouver. House painters with 30+ years experience. Licensed, insured, A+ BBB rated. Free estimates."
         keywords="residential painting Vancouver, house painters BC, interior painting, exterior painting, home painting contractors Vancouver, house painting cost"
-        canonical="https://atcon-decorating.lovable.app/services/residential"
+        canonical="https://www.atcondecor.com/services/residential"
         schema={{
           "@type": ["Service"],
           "name": "Residential Painting Services",

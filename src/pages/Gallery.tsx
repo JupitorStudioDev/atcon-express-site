@@ -141,7 +141,7 @@ const Gallery: React.FC = () => {
         title="Project Gallery - Painting Portfolio | Atcon Decorating Vancouver"
         description="View our portfolio of residential and commercial painting projects in Vancouver. Quality workmanship showcased in our project gallery. 30+ years experience."
         keywords="painting gallery Vancouver, painting portfolio BC, before after painting, painting examples Vancouver, Atcon painting projects"
-        canonical="https://atcon-decorating.lovable.app/gallery"
+        canonical="https://www.atcondecor.com/gallery"
         schema={{
           "@type": ["WebPage", "ImageGallery"],
           "name": "Project Gallery",

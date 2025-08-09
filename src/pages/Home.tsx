@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         title="Atcon Decorating - Master Painters in Vancouver Since 1992"
         description="Expert residential & commercial painting services in Vancouver and Lower Mainland. 30+ years experience, A+ BBB rating, licensed & insured. Free quotes."
         keywords="painting contractors Vancouver, residential painting, commercial painting, cabinet painting, North Vancouver painters, BBB A+ rated painters, licensed painters BC"
-        canonical="https://atcon-decorating.lovable.app/"
+        canonical="https://www.atcondecor.com/"
         schema={{
           hasOfferCatalog: {
             "@type": "OfferCatalog",

@@ -12,7 +12,7 @@ const Process: React.FC = () => {
         title="Our Painting Process - Professional Standards | Atcon Decorating"
         description="Learn about Atcon's proven painting process. Comprehensive preparation, quality materials, and attention to detail ensure lasting results. 30+ years experience."
         keywords="painting process Vancouver, professional painting standards, painting preparation, quality painting methods, Atcon painting process"
-        canonical="https://atcon-decorating.lovable.app/process"
+        canonical="https://www.atcondecor.com/process"
         schema={{
           "@type": ["WebPage"],
           "name": "Our Painting Process",

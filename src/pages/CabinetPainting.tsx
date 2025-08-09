@@ -12,7 +12,7 @@ const CabinetPainting: React.FC = () => {
         title="Cabinet Painting Vancouver - Kitchen Cabinet Refinishing | Atcon"
         description="Transform your kitchen with professional cabinet painting services. Save 60-80% vs replacement. Expert cabinet refinishing in Vancouver & Lower Mainland."
         keywords="cabinet painting Vancouver, kitchen cabinet refinishing, cabinet painters BC, kitchen makeover Vancouver, cabinet painting cost"
-        canonical="https://atcon-decorating.lovable.app/services/cabinet-painting"
+        canonical="https://www.atcondecor.com/services/cabinet-painting"
         schema={{
           "@type": ["Service"],
           "name": "Cabinet Painting and Refinishing",
