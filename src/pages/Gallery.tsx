@@ -50,7 +50,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 8,
-      image: "https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1200&auto=format&fit=crop",
+      image: "/lovable-uploads/e4e1e7a3-88f8-4e9a-8ad8-eb46fed5fc11.png",
       title: "Multi-Story Residential",
       description: "Large-scale residential painting project with coordinated color scheme"
     },
