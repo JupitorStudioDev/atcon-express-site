@@ -64,7 +64,7 @@ const Gallery: React.FC = () => {
       id: 10,
       image: "/lovable-uploads/341f1932-6c4a-40e1-a444-4ebe375a00c6.png",
       title: "Gourmet Kitchen Makeover",
-      description: "Modern kitchen transformation with perfect finishes."
+      description: "Modern kitchen refresh with bold cabinetry and refined finishes"
     },
     {
       id: 11,
