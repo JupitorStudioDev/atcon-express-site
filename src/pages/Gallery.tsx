@@ -14,7 +14,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/6d0b7a1d-be14-4d72-9a06-2fdeb2b5eda4.png",
       title: "Elegant Living Room Refresh",
       description: "Sophisticated interior painting with custom color consultation in Burnaby"
     },
