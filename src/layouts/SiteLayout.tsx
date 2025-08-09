@@ -64,7 +64,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
                 <img src="/maple-leaf-logo.svg" alt="Atcon Decorating Logo" className="w-10 h-10 object-contain" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground leading-tight">Atcon</span>
+                <span className="text-xl font-bold text-foreground leading-tight">ATCON</span>
                 <span className="text-xs text-muted-foreground leading-tight">Painting and Finishing</span>
               </div>
             </div>
@@ -133,7 +133,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
             <div className="flex items-center space-x-2">
               <img src="/maple-leaf-logo.svg" alt="Atcon Decorating Logo" className="w-8 h-8 object-contain" />
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground leading-tight">Atcon</span>
+                <span className="text-lg font-bold text-foreground leading-tight">ATCON</span>
                 <span className="text-xs text-muted-foreground leading-tight">Painting and Finishing</span>
               </div>
             </div>
