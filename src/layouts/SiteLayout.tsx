@@ -116,9 +116,17 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
           className={`fixed top-0 left-0 h-full w-80 border-r border-gray-200 z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
             isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
-          style={{ backgroundColor: '#ffffff' }}
+          style={{ 
+            backgroundColor: '#ffffff',
+            opacity: '1',
+            backdropFilter: 'none',
+            WebkitBackdropFilter: 'none'
+          }}
         >
-          <div className="flex items-center justify-between p-4 border-b border-border">
+          <div 
+            className="flex items-center justify-between p-4 border-b border-gray-200"
+            style={{ backgroundColor: '#ffffff' }}
+          >
             <div className="flex items-center space-x-2">
               <img src="/maple-leaf-logo.svg" alt="Atcon Decorating Logo" className="w-8 h-8 object-contain" />
               <span className="text-lg font-bold text-foreground">Atcon Decorating</span>
@@ -132,7 +140,10 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
             </button>
           </div>
           
-          <nav className="p-4">
+          <nav 
+            className="p-4"
+            style={{ backgroundColor: '#ffffff' }}
+          >
             <div className="flex flex-col space-y-1">
               <a 
                 href="/" 
