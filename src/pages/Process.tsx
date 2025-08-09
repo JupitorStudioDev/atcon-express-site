@@ -136,8 +136,8 @@ const Process: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=1200&auto=format&fit=crop"
-                  alt="Professional paint application techniques"
+                  src="/lovable-uploads/8adb6490-aca0-4821-b980-d288d8f92032.png"
+                  alt="Professional painter applying paint with roller in protected room environment"
                   className="w-full rounded-lg shadow-large"
                 />
               </div>
