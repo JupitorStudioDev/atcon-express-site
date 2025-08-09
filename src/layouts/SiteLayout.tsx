@@ -275,7 +275,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
 
           {/* Copyright */}
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            © 2024 Atcon Decorating Limited. All rights reserved.
+            © {new Date().getFullYear()} Atcon Decorating Limited. All rights reserved.
           </div>
         </div>
       </footer>
