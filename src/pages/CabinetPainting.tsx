@@ -54,8 +54,8 @@ const CabinetPainting: React.FC = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1556909114-6c25c2f1c6c1?q=80&w=1600&auto=format&fit=crop"
-                alt="Beautiful kitchen cabinet refinishing project"
+                src="/lovable-uploads/60677831-5aa0-4022-8125-91e8a98f1309.png"
+                alt="Beautiful kitchen cabinet refinishing with white upper and dark lower cabinets"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
