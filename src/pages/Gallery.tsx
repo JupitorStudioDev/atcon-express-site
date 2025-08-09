@@ -32,7 +32,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+      image: "/lovable-uploads/98f17076-bf3b-48a3-9b62-c42aa329f5da.png",
       title: "Retail Store Enhancement",
       description: "Commercial painting project for high-traffic retail environment"
     },
