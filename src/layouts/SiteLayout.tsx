@@ -82,47 +82,53 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
               {/* Services Dropdown */}
               <div className="relative">
                 <button 
-                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
-                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                  onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                   className="flex items-center text-sm font-medium text-foreground hover:text-accent-warm transition-colors"
                 >
                   Our Services
-                  <ChevronDown className="w-4 h-4 ml-1" />
+                  <ChevronDown className={`w-4 h-4 ml-1 transform transition-transform ${isServicesDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
                 
                 {isServicesDropdownOpen && (
-                  <div 
-                    className="absolute top-full left-0 mt-1 w-64 bg-background border border-border rounded-lg shadow-large z-50"
-                    onMouseEnter={() => setIsServicesDropdownOpen(true)}
-                    onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                  >
-                    <div className="p-2">
-                      <a 
-                        href="/services" 
-                        className="block px-4 py-3 text-sm font-medium text-foreground hover:bg-muted rounded-md transition-colors border-b border-border mb-1"
-                      >
-                        All Services Overview
-                      </a>
-                      <a 
-                        href="/services/residential" 
-                        className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
-                      >
-                        Residential Painting
-                      </a>
-                      <a 
-                        href="/services/commercial" 
-                        className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
-                      >
-                        Commercial Painting
-                      </a>
-                      <a 
-                        href="/services/cabinet-painting" 
-                        className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
-                      >
-                        Cabinet Painting
-                      </a>
+                  <>
+                    {/* Backdrop to close dropdown when clicking outside */}
+                    <div 
+                      className="fixed inset-0 z-40" 
+                      onClick={() => setIsServicesDropdownOpen(false)}
+                    />
+                    <div className="absolute top-full left-0 mt-1 w-64 bg-background border border-border rounded-lg shadow-large z-50">
+                      <div className="p-2">
+                        <a 
+                          href="/services" 
+                          className="block px-4 py-3 text-sm font-medium text-foreground hover:bg-muted rounded-md transition-colors border-b border-border mb-1"
+                          onClick={() => setIsServicesDropdownOpen(false)}
+                        >
+                          All Services Overview
+                        </a>
+                        <a 
+                          href="/services/residential" 
+                          className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
+                          onClick={() => setIsServicesDropdownOpen(false)}
+                        >
+                          Residential Painting
+                        </a>
+                        <a 
+                          href="/services/commercial" 
+                          className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
+                          onClick={() => setIsServicesDropdownOpen(false)}
+                        >
+                          Commercial Painting
+                        </a>
+                        <a 
+                          href="/services/cabinet-painting" 
+                          className="block px-4 py-3 text-sm text-foreground hover:bg-muted rounded-md transition-colors"
+                          onClick={() => setIsServicesDropdownOpen(false)}
+                        >
+                          Cabinet Painting
+                        </a>
+                      </div>
                     </div>
-                  </div>
+                  </>
                 )}
               </div>
               
