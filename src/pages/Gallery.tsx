@@ -56,7 +56,7 @@ const Gallery: React.FC = () => {
     },
     {
       id: 9,
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600&auto=format&fit=crop",
+      image: "/lovable-uploads/c31d122c-eab4-4a9e-8082-5abf66b96784.png",
       title: "Master Bedroom Suite",
       description: "Serene bedroom transformation with premium paint finishes"
     },
