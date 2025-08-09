@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
+import { Home, Building2, Palette } from 'lucide-react';
 
 const Gallery: React.FC = () => {
   const projects = [
@@ -136,8 +137,8 @@ const Gallery: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-muted rounded-lg">
-              <div className="w-16 h-16 bg-trust-green rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">🏠</span>
+              <div className="w-16 h-16 bg-muted/30 border border-border rounded-full flex items-center justify-center mx-auto mb-4">
+                <Home className="w-6 h-6 text-foreground" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Residential</h3>
               <p className="text-muted-foreground">
@@ -146,8 +147,8 @@ const Gallery: React.FC = () => {
             </div>
 
             <div className="text-center p-6 bg-muted rounded-lg">
-              <div className="w-16 h-16 bg-trust-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">🏢</span>
+              <div className="w-16 h-16 bg-muted/30 border border-border rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building2 className="w-6 h-6 text-foreground" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Commercial</h3>
               <p className="text-muted-foreground">
@@ -156,8 +157,8 @@ const Gallery: React.FC = () => {
             </div>
 
             <div className="text-center p-6 bg-muted rounded-lg">
-              <div className="w-16 h-16 bg-accent-warm rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">🎨</span>
+              <div className="w-16 h-16 bg-muted/30 border border-border rounded-full flex items-center justify-center mx-auto mb-4">
+                <Palette className="w-6 h-6 text-foreground" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Specialty</h3>
               <p className="text-muted-foreground">
