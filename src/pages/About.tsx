@@ -38,8 +38,8 @@ const About: React.FC = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1200&auto=format&fit=crop"
-                alt="Professional painting team with quality equipment and materials"
+                src="/lovable-uploads/9e291e33-dcd0-41d3-966e-68516806bf4e.png"
+                alt="Beautiful modern living room showcasing professional interior painting with dramatic blue accent wall and natural lighting"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
