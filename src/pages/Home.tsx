@@ -122,7 +122,7 @@ const Home: React.FC = () => {
             <Card className="group hover:shadow-large transition-all duration-300">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
-                  src="/lovable-uploads/2530b846-1508-4c81-96c8-48826022089a.png"
+                  src="/lovable-uploads/91183b86-b56c-438e-a863-a2b24d318150.png"
                   alt="Expert cabinet painting and refinishing services"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
