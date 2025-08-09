@@ -111,8 +111,8 @@ const Gallery: React.FC = () => {
     {
       id: 18,
       image: "/lovable-uploads/00f7b82f-ba77-478e-9cfc-ac61baad5e96.png",
-      title: "Modern Office with Glass Partitions",
-      description: "Contemporary neutral walls with exposed industrial ceiling and glass partition coordination"
+      title: "Modern Office with Industrial Details",
+      description: "Neutral grey walls with white trim work, exposed ceiling piping and ductwork coordination in industrial finish"
     },
     {
       id: 19,
