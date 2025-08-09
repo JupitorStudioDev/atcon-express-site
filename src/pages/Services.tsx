@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -60,11 +61,11 @@ const Services: React.FC = () => {
                       <span className="text-sm mt-3">Surface preparation & repair</span>
                     </div>
                   </div>
-                  <a href="/services/residential">
+                  <Link to="/services/residential">
                     <Button variant="cta" size="lg" className="w-full">
                       Learn More
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -104,11 +105,11 @@ const Services: React.FC = () => {
                       <span className="text-sm mt-3">Scheduled maintenance</span>
                     </div>
                   </div>
-                  <a href="/services/commercial">
+                  <Link to="/services/commercial">
                     <Button variant="cta" size="lg" className="w-full">
                       Learn More
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -148,11 +149,11 @@ const Services: React.FC = () => {
                       <span className="text-sm mt-3">Hardware upgrades</span>
                     </div>
                   </div>
-                  <a href="/services/cabinet-painting">
+                  <Link to="/services/cabinet-painting">
                     <Button variant="cta" size="lg" className="w-full">
                       Learn More
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -213,9 +214,11 @@ const Services: React.FC = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Get a free, no-obligation estimate for your painting project. We'll help you choose the perfect colors and finish for your space.
           </p>
-          <Button variant="cta" size="xl">
-            Get Your Free Quote Today
-          </Button>
+          <Link to="/contact">
+            <Button variant="cta" size="xl">
+              Get Your Free Quote Today
+            </Button>
+          </Link>
         </div>
       </section>
     </SiteLayout>

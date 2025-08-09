@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -187,9 +188,11 @@ const Commercial: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <Button variant="cta" size="lg">
-                Get a Quote
-              </Button>
+              <Link to="/contact">
+                <Button variant="cta" size="lg">
+                  Get a Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -249,12 +252,16 @@ const Commercial: React.FC = () => {
             Ready to make a professional impression? Contact us for a consultation and discover how our commercial painting services can benefit your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl">
-              Get a Quote
-            </Button>
-            <Button variant="outline-dark" size="xl">
-              View Our Process
-            </Button>
+            <Link to="/contact">
+              <Button variant="cta" size="xl">
+                Get a Quote
+              </Button>
+            </Link>
+            <Link to="/process">
+              <Button variant="outline-dark" size="xl">
+                View Our Process
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

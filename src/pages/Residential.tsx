@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -76,9 +77,11 @@ const Residential: React.FC = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 Our team understands the unique challenges of Vancouver's climate and selects paints and techniques specifically suited to our local conditions.
               </p>
-              <Button variant="cta" size="lg">
-                Get a Quote
-              </Button>
+              <Link to="/contact">
+                <Button variant="cta" size="lg">
+                  Get a Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -212,12 +215,16 @@ const Residential: React.FC = () => {
             Ready to enhance your home's beauty and value? Contact us for a free consultation and discover why we're Vancouver's trusted residential painting specialists.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl">
-              Get a Quote
-            </Button>
-            <Button variant="outline-dark" size="xl">
-              View Our Gallery
-            </Button>
+            <Link to="/contact">
+              <Button variant="cta" size="xl">
+                Get a Quote
+              </Button>
+            </Link>
+            <Link to="/gallery">
+              <Button variant="outline-dark" size="xl">
+                View Our Gallery
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

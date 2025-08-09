@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 
@@ -175,12 +176,16 @@ const Gallery: React.FC = () => {
             Let us transform your space with the same level of craftsmanship and attention to detail you see in our portfolio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl">
-              Get Your Free Quote
-            </Button>
-            <Button variant="outline-dark" size="xl">
-              View Our Process
-            </Button>
+            <Link to="/contact">
+              <Button variant="cta" size="xl">
+                Get Your Free Quote
+              </Button>
+            </Link>
+            <Link to="/process">
+              <Button variant="outline-dark" size="xl">
+                View Our Process
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

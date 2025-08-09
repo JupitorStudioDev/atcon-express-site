@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -259,9 +260,11 @@ const Process: React.FC = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Our proven process has delivered exceptional results for over 30 years. Let us transform your space with the same meticulous attention to detail.
           </p>
-          <Button variant="cta" size="xl">
-            Start Your Project Today
-          </Button>
+          <Link to="/contact">
+            <Button variant="cta" size="xl">
+              Start Your Project Today
+            </Button>
+          </Link>
         </div>
       </section>
     </SiteLayout>

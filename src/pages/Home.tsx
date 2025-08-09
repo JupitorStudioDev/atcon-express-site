@@ -88,9 +88,11 @@ const Home: React.FC = () => {
                 <p className="text-muted-foreground mb-4">
                   Transform your home with our expert interior and exterior painting services. Premium materials and meticulous attention to detail.
                 </p>
-                <Button variant="outline-dark" size="sm">
-                  Learn More
-                </Button>
+                <Link to="/services/residential">
+                  <Button variant="outline-dark" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -108,9 +110,11 @@ const Home: React.FC = () => {
                 <p className="text-muted-foreground mb-4">
                   Professional painting solutions for offices, retail spaces, and industrial buildings. Minimal disruption, maximum impact.
                 </p>
-                <Button variant="outline-dark" size="sm">
-                  Learn More
-                </Button>
+                <Link to="/services/commercial">
+                  <Button variant="outline-dark" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -128,9 +132,11 @@ const Home: React.FC = () => {
                 <p className="text-muted-foreground mb-4">
                   Refresh your kitchen with our specialized cabinet painting and refinishing services. Like new, at a fraction of the cost.
                 </p>
-                <Button variant="outline-dark" size="sm">
-                  Learn More
-                </Button>
+                <Link to="/services/cabinet-painting">
+                  <Button variant="outline-dark" size="sm">
+                    Learn More
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>

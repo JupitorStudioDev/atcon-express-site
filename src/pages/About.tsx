@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -153,9 +154,11 @@ const About: React.FC = () => {
             </div>
 
             <div className="mt-12">
-              <Button variant="cta" size="lg">
-                Get Your Free Estimate Today
-              </Button>
+              <Link to="/contact">
+                <Button variant="cta" size="lg">
+                  Get Your Free Estimate Today
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

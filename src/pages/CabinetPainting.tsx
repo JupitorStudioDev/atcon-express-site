@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -96,9 +97,11 @@ const CabinetPainting: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <Button variant="cta" size="lg">
-                Get a Quote
-              </Button>
+              <Link to="/contact">
+                <Button variant="cta" size="lg">
+                  Get a Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -255,9 +258,11 @@ const CabinetPainting: React.FC = () => {
             <p className="text-muted-foreground mb-4">
               Not sure about color? Our experts provide free color consultation to help you choose the perfect shade.
             </p>
-            <Button variant="outline-dark" size="lg">
-              Schedule Color Consultation
-            </Button>
+            <Link to="/contact">
+              <Button variant="outline-dark" size="lg">
+                Schedule Color Consultation
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -270,12 +275,16 @@ const CabinetPainting: React.FC = () => {
             Give your kitchen a stunning makeover with our professional cabinet painting services. Get the kitchen of your dreams without the cost of full replacement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl">
-              Get a Quote
-            </Button>
-            <Button variant="outline-dark" size="xl">
-              View Cabinet Gallery
-            </Button>
+            <Link to="/contact">
+              <Button variant="cta" size="xl">
+                Get a Quote
+              </Button>
+            </Link>
+            <Link to="/gallery">
+              <Button variant="outline-dark" size="xl">
+                View Cabinet Gallery
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
