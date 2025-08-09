@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home, User, Wrench, ClipboardList, Camera, Phone } from 'lucide-react';
 
 interface SiteLayoutProps {
   children: React.ReactNode;
@@ -113,7 +113,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
 
         {/* Mobile Navigation Drawer */}
         <div 
-          className={`fixed top-0 left-0 h-full w-80 border-r border-gray-200 z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+          className={`fixed top-0 left-0 h-screen w-80 border-r border-gray-200 z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
             isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
           style={{ 
@@ -147,50 +147,57 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
             <div className="flex flex-col space-y-1">
               <a 
                 href="/" 
-                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Home
+                <Home className="w-5 h-5" />
+                <span>Home</span>
               </a>
               <a 
                 href="/about" 
-                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                About
+                <User className="w-5 h-5" />
+                <span>About</span>
               </a>
               <a 
                 href="/services" 
-                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Our Services
+                <Wrench className="w-5 h-5" />
+                <span>Our Services</span>
               </a>
               <a 
                 href="/process" 
-                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Our Process
+                <ClipboardList className="w-5 h-5" />
+                <span>Our Process</span>
               </a>
               <a 
                 href="/gallery" 
-                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Project Gallery
+                <Camera className="w-5 h-5" />
+                <span>Project Gallery</span>
               </a>
               <a 
                 href="/contact" 
-                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                className="flex items-center space-x-3 text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Contact
+                <Phone className="w-5 h-5" />
+                <span>Contact</span>
               </a>
             </div>
             
-            <div className="mt-8 pt-8 border-t border-border">
-              <a href="tel:+16047204315" className="text-sm font-semibold text-foreground hover:text-accent-warm transition-colors block mb-4">
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <a href="tel:+16047204315" className="flex items-center space-x-3 text-sm font-semibold text-foreground hover:text-accent-warm transition-colors block mb-4">
+                <Phone className="w-5 h-5" />
                 📞 (604) 720-4315
               </a>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
