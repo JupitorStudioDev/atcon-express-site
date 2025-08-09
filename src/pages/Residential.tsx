@@ -53,8 +53,8 @@ const Residential: React.FC = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1556037757-8a0698ab1dcc?q=80&w=1600&auto=format&fit=crop"
-                alt="Beautiful residential exterior painting in Vancouver"
+                src="/lovable-uploads/a02c08fb-1a8f-4a52-96f2-1ede07e70b01.png"
+                alt="Beautiful modern contemporary home exterior showcasing professional residential painting services with white and natural wood siding"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
