@@ -112,7 +112,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
         )}
 
         {/* Mobile Navigation Drawer */}
-        <div className={`fixed top-0 left-0 h-full w-80 bg-background border-r border-border z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+        <div className={`fixed top-0 left-0 h-full w-80 bg-white border-r border-border z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}>
           <div className="flex items-center justify-between p-4 border-b border-border">
