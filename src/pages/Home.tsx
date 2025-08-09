@@ -157,8 +157,8 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1606744824163-985d376605aa?q=80&w=1200&auto=format&fit=crop"
-                alt="Professional painting equipment and quality materials"
+                src="/lovable-uploads/584c5ed9-5222-4b19-bde3-02f8e87d5f54.png"
+                alt="Professional contractor and client celebrating successful completion of painting project in beautifully finished room"
                 className="w-full rounded-lg shadow-large"
               />
             </div>
