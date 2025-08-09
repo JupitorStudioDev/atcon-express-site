@@ -185,43 +185,43 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="aspect-square overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop"
-                alt="Exterior house painting project in North Vancouver"
+                src="/lovable-uploads/f790be10-5fb0-4de8-adf4-dedf94f1c9b6.png"
+                alt="Modern Exterior Transformation in North Vancouver"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600&auto=format&fit=crop"
-                alt="Interior painting project with modern design"
+                src="/lovable-uploads/6d0b7a1d-be14-4d72-9a06-2fdeb2b5eda4.png"
+                alt="Elegant Living Room Refresh in Burnaby"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1600&auto=format&fit=crop"
-                alt="Kitchen cabinet refinishing project"
+                src="/lovable-uploads/91183b86-b56c-438e-a863-a2b24d318150.png"
+                alt="Kitchen Cabinet Refinishing in Langley"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop"
-                alt="Living room interior painting project"
+                src="/lovable-uploads/950aec6e-1e45-4168-9204-45ae250db699.png"
+                alt="Heritage Home Restoration in West Vancouver"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
-                alt="Commercial building painting project"
+                src="/lovable-uploads/27e1e541-0c6b-457b-b974-b80c9e47fd6e.png"
+                alt="Corporate Headquarters painting project"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1556037757-8a0698ab1dcc?q=80&w=1600&auto=format&fit=crop"
-                alt="Residential exterior painting completed project"
+                src="/lovable-uploads/49f47bc8-a1a4-4c22-868f-dd6b3b88405b.png"
+                alt="Staircase & Railing Refinishing project"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
