@@ -75,8 +75,8 @@ const Gallery: React.FC = () => {
     {
       id: 12,
       image: "https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop",
-      title: "Coastal Home Exterior",
-      description: "Weather-resistant exterior painting designed for coastal conditions"
+      title: "Staircase & Railing Refinishing",
+      description: "Detailed painting and staining for architectural focal points"
     }
   ];
 
