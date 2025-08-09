@@ -103,67 +103,90 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({ children, showSuccessMessage = 
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Overlay */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-background">
-            <nav className="container mx-auto px-4 py-4">
-              <div className="flex flex-col space-y-4">
-                <a 
-                  href="/" 
-                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Home
-                </a>
-                <a 
-                  href="/about" 
-                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  About
-                </a>
-                <a 
-                  href="/services" 
-                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Our Services
-                </a>
-                <a 
-                  href="/process" 
-                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Our Process
-                </a>
-                <a 
-                  href="/gallery" 
-                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Project Gallery
-                </a>
-                <a 
-                  href="/contact" 
-                  className="text-sm font-medium text-foreground hover:text-accent-warm transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Contact
-                </a>
-                <div className="pt-4 border-t border-border">
-                  <a href="tel:+16047204315" className="text-sm font-semibold text-foreground hover:text-accent-warm transition-colors block mb-3">
-                    (604) 720-4315
-                  </a>
-                  <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                    <Button variant="cta" size="sm" className="w-full">
-                      Get a Free Quote
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </nav>
-          </div>
+          <div 
+            className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
         )}
+
+        {/* Mobile Navigation Drawer */}
+        <div className={`fixed top-0 left-0 h-full w-80 bg-background border-r border-border z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}>
+          <div className="flex items-center justify-between p-4 border-b border-border">
+            <div className="flex items-center space-x-2">
+              <img src="/maple-leaf-logo.svg" alt="Atcon Decorating Logo" className="w-8 h-8 object-contain" />
+              <span className="text-lg font-bold text-foreground">Atcon Decorating</span>
+            </div>
+            <button 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 hover:bg-muted rounded-md"
+              aria-label="Close menu"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+          
+          <nav className="p-4">
+            <div className="flex flex-col space-y-1">
+              <a 
+                href="/" 
+                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </a>
+              <a 
+                href="/about" 
+                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About
+              </a>
+              <a 
+                href="/services" 
+                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Our Services
+              </a>
+              <a 
+                href="/process" 
+                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Our Process
+              </a>
+              <a 
+                href="/gallery" 
+                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Project Gallery
+              </a>
+              <a 
+                href="/contact" 
+                className="text-sm font-medium text-foreground hover:text-accent-warm hover:bg-muted transition-colors py-3 px-3 rounded-md"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact
+              </a>
+            </div>
+            
+            <div className="mt-8 pt-8 border-t border-border">
+              <a href="tel:+16047204315" className="text-sm font-semibold text-foreground hover:text-accent-warm transition-colors block mb-4">
+                📞 (604) 720-4315
+              </a>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="cta" size="sm" className="w-full">
+                  Get a Free Quote
+                </Button>
+              </Link>
+            </div>
+          </nav>
+        </div>
       </header>
 
       {/* Main Content */}
