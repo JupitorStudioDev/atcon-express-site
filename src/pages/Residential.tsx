@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SiteLayout from '@/layouts/SiteLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { ShieldCheck, Palette, Zap } from 'lucide-react';
 
 const Residential: React.FC = () => {
   return (
@@ -175,8 +176,8 @@ const Residential: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-trust-green rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">🏆</span>
+              <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center mx-auto mb-4">
+                <ShieldCheck className="w-6 h-6 text-trust-green" />
               </div>
               <h3 className="text-lg font-semibold mb-3">Quality Guarantee</h3>
               <p className="text-muted-foreground">
@@ -185,8 +186,8 @@ const Residential: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-trust-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">🎨</span>
+              <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Palette className="w-6 h-6 text-trust-blue" />
               </div>
               <h3 className="text-lg font-semibold mb-3">Color Expertise</h3>
               <p className="text-muted-foreground">
@@ -195,8 +196,8 @@ const Residential: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-accent-warm rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-2xl">⚡</span>
+              <div className="w-12 h-12 bg-muted/30 border border-border rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Zap className="w-6 h-6 text-accent-warm" />
               </div>
               <h3 className="text-lg font-semibold mb-3">Efficient Service</h3>
               <p className="text-muted-foreground">
